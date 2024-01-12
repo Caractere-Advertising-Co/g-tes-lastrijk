@@ -20,17 +20,18 @@
         <img src="<?php echo $banner['sizes']['large'];?>" alt="<?php echo $banner['name'];?>"/>
     </div>
     <div class="bottom_row container">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <?php $slider = get_field('galerie_gites');?>
+        <div class="swiper-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <?php $slider = get_field('galerie_gites');?>
 
-                <?php foreach($slider as $slide) :?>
-                    <div class="swiper-slide">
-                        <img src="<?php echo $slide['sizes']['large']; ?>" alt="<?php echo $slide['name']; ?>"/>
-                    </div>
-                <?php endforeach;?>
+                    <?php foreach($slider as $slide) :?>
+                        <div class="swiper-slide">
+                            <img src="<?php echo $slide['sizes']['large']; ?>" alt="<?php echo $slide['name']; ?>"/>
+                        </div>
+                    <?php endforeach;?>
+                </div>
             </div>
-
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
