@@ -7,11 +7,10 @@
 
     img{
         position: absolute;
-        top: 0;
         left: 0;
         z-index: 0;
         width: 100vw;
-        top: -15vh;
+        bottom:0;
         filter: brightness(.7);
     }
 }
@@ -19,7 +18,7 @@
 .bottom_row{
     height: 40vh;
     position: relative;
-    top: -25vh;
+    top: -23vh;
 
     .content {
         text-align: center;
@@ -48,6 +47,7 @@
             height: 40px;
             border: 1px solid #282727;
             border-radius: 20px;
+            top: 110px;
 
             &::after{
                 font-size: 1rem;
@@ -60,13 +60,11 @@
         .swiper-button-next{
             right: -70px;
         }
-    }
-
-    
+    }    
 
     .liste_gites{
-        border-top: 1px solid $primary-color;
-        border-bottom: 1px solid $primary-color;
+        border-top: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
         display: flex;
         justify-content: space-between;
         list-style: none;
@@ -106,7 +104,7 @@
         }
 
         li + li {
-            border-left:1px solid $primary-color;
+            border-left:1px solid #dcdcdc;
         }
     }
 
