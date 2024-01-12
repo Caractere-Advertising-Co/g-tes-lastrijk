@@ -11,6 +11,7 @@
 
  $galerie = get_field('galerie_gites');
  $gites = get_field('gites');
+ $message = get_field('title_page','option');
 ?>
 
 <?php get_header();?>
@@ -18,6 +19,7 @@
 <div>
     <div class="top_window" style="background:url('<?php echo $banner['sizes']['large'];?>');background-size:cover;background-repeat:no-repeat;background-position:bottom center;filter:brightness(.7);">
         <!--<img src="<?php echo $banner['sizes']['large'];?>" alt="<?php echo $banner['name'];?>"/>-->
+        <?php echo $message;?>
     </div>
     <div class="bottom_row container">
         <div class="swiper-container">

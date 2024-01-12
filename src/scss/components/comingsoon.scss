@@ -13,6 +13,15 @@
         bottom:0;
         filter: brightness(.7);
     }
+
+    h1{
+        font-size: 3rem;
+        color: $primary-color;
+
+        strong{
+            color:#fff;
+        }
+    }
 }
 
 .bottom_row{
