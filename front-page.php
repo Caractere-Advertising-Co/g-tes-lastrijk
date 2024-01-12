@@ -11,7 +11,7 @@
 
  $galerie = get_field('galerie_gites');
  $gites = get_field('gites');
- $message = get_field('title_page','option');
+ $message = get_field('titre_page','option');
 ?>
 
 <?php get_header();?>
