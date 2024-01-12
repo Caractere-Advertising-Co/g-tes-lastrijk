@@ -16,8 +16,8 @@
 <?php get_header();?>
 
 <div>
-    <div class="top_window">
-        <img src="<?php echo $banner['sizes']['large'];?>" alt="<?php echo $banner['name'];?>"/>
+    <div class="top_window" style="background:url('<?php echo $banner['sizes']['large'];?>');background-size:cover;background-repeat:no-repeat;background-position:bottom center;filter:brightness(.7);">
+        <!--<img src="<?php echo $banner['sizes']['large'];?>" alt="<?php echo $banner['name'];?>"/>-->
     </div>
     <div class="bottom_row container">
         <div class="swiper-container">
