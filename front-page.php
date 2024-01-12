@@ -26,9 +26,13 @@
                     <?php $slider = get_field('galerie_gites');?>
 
                     <?php foreach($slider as $slide) :?>
+                        
                         <div class="swiper-slide">
-                            <img src="<?php echo $slide['sizes']['large']; ?>" alt="<?php echo $slide['name']; ?>"/>
+                            <a data-fslightbox href="<?php echo $slide['sizes']['large']; ?>">
+                                <img src="<?php echo $slide['sizes']['large']; ?>" alt="<?php echo $slide['name']; ?>"/>
+                            </a>
                         </div>
+                        
                     <?php endforeach;?>
                 </div>
             </div>
