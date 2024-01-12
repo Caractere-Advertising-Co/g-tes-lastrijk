@@ -16,7 +16,7 @@
 }
 
 .bottom_row{
-    height: 40  vh;
+    height: 40vh;
     position: relative;
     top: -25vh;
 
@@ -80,11 +80,11 @@
 
             h2{
                 font-weight: 400;
-                font-size: 1.3rem;
+                font-size: 1rem;
             }
 
             p{
-                font-size: 1.3rem;
+                font-size: 1rem;
             }
 
             &:first-child{
@@ -116,7 +116,7 @@
             font-weight: 600;
             margin-top: 30px;
             letter-spacing: 3px;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
         ul{
             list-style: none;
@@ -135,7 +135,7 @@
 
                 a{
                     text-decoration: none;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     line-height: 1.2rem;
                     letter-spacing: 5px;
                     color: #333;
