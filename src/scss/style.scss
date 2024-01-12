@@ -1,9 +1,17 @@
 /* Mixins */
 @import
+'components/colors',
+'components/fonts',
 'components/comingsoon';
 
 *,
 body{
     margin:0;
     padding: 0;
+    font-family: 'RobotoSlab Var',serif;
+}
+
+.container{
+    width: 75vw;
+    margin: auto;
 }
