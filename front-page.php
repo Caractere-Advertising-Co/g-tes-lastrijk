@@ -56,7 +56,7 @@
                 <h2><?php echo $title;?></h2>
                 <ul>
                     <li><?php echo $telephone;?></li>
-                    <li><a href="<?php echo $email;?>"><?php echo $email;?></a></li>
+                    <li><a href="mailto:<?php echo $email;?>"><?php echo $email;?></a></li>
                 </ul>
                 <span class="adresse"><?php echo $adresse;?></span>
             </div>
