@@ -1,0 +1,578 @@
+#hero-container {
+  height: 90vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+
+  .swiper-hero {
+    .swiper-wrapper {
+      overflow: hidden;
+
+      .swiper-slide {
+        height: 90vh;
+
+        img {
+          position: absolute;
+          z-index: 0;
+          filter: brightness(45%);
+          width: 100%;
+        }
+
+        .content {
+          position: relative;
+          margin-top: 250px;
+          z-index: 1;
+
+          p {
+            text-transform: uppercase;
+            color: $light;
+            letter-spacing: 7px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 0.7rem;
+          }
+
+          h1 {
+            color: $light;
+            text-align: center;
+
+            strong {
+              font-weight: 800;
+            }
+          }
+
+          .cta {
+            margin-top: 4rem;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            display: block;
+            max-width: fit-content;
+          }
+        }
+      }
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      right: 0;
+      left: auto;
+      top: 50%;
+      width: 40px;
+      gap: 10px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+      .swiper-pagination-bullet {
+        border: 2px solid $light;
+        background: none;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  .booking {
+    width: 50vw;
+    background-color: #fff;
+    height: 50px;
+    position: absolute;
+    bottom: 100px;
+    z-index: 999;
+    left: 25vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 0.7rem;
+      font-weight: 400;
+      padding: 10px 30px;
+      height: calc(100% - 20px);
+    }
+
+    p + p {
+      border-left: 1px solid $light-gray;
+    }
+
+    .gold {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+}
+
+#card-gites {
+  margin-top: -50px;
+  position: relative;
+  z-index: 1000;
+
+  .nomobile {
+    display: flex;
+  }
+
+  .container {
+    .card {
+      width: 50%;
+      height: 400px;
+      position: relative;
+      background-size: cover !important;
+
+      &::before {
+        content: "";
+        background-color: $secondary-color;
+        opacity: 0;
+        z-index: 0;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: block;
+        transition: all ease-in 200ms;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 0.7;
+        }
+
+        &::after {
+          content: "+";
+          color: #fff;
+          position: absolute;
+          top: calc((100% - 60px) / 2);
+          left: calc((100% - 60px) / 2);
+          margin: auto;
+          font-size: 4rem;
+          background: #ffffff29;
+          width: 60px;
+          height: 60px;
+          line-height: 3.3rem;
+          text-align: center;
+          border-radius: 40px;
+          margin: 0;
+        }
+
+        .content {
+          opacity: 1;
+        }
+      }
+
+      .content {
+        position: absolute;
+        width: 100%;
+        left: 20px;
+        bottom: 20px;
+        opacity: 0;
+        transition: all ease 300ms;
+
+        h2 {
+          color: $light;
+        }
+
+        p {
+          color: $primary-color;
+          letter-spacing: 10px;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 0.9rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+#liste-actualites {
+  padding-bottom: 450px;
+}
+
+#galerie-front {
+  background: linear-gradient(0deg, #fff 50%, $light-gray 50%);
+  .columns {
+    .col-g {
+      height: 1000px;
+      margin-top: -500px;
+    }
+
+    .col-d {
+      height: 700px;
+      margin-top: 200px;
+    }
+  }
+
+  .container {
+    margin-top: 200px;
+    height: 600px;
+  }
+}
+
+#aboutus {
+  .container {
+    .swiper-content {
+      position: relative;
+      z-index: 10;
+      min-height: 200px;
+      margin: auto;
+      top: -150px;
+      margin-bottom: 50px;
+
+      .swiper-horizontal {
+        touch-action: pan-x;
+      }
+
+      .swiper-resp {
+        .swiper-slide {
+          overflow: hidden;
+          height: 320px;
+          width: calc((100% - 300px) / 3) !important;
+          padding: 40px;
+          cursor: pointer;
+
+          h4 {
+            color: $light;
+            position: absolute;
+            z-index: 10;
+            bottom: 40px;
+            top: auto;
+            font-size: 2rem;
+            font-weight: 600;
+            text-shadow: 0px 0px 10px #000000a3;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            background-color: transparent;
+            transition: all ease-in-out 200ms;
+            height: 400px;
+            margin-left: -40px;
+            margin-top: -40px;
+          }
+
+          &:hover {
+            &::before {
+              background-color: $hover-transparent;
+            }
+          }
+        }
+      }
+
+      .section_nav {
+        position: relative;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          top: 50px;
+        }
+      }
+    }
+  }
+}
+
+// #section_nosproduits {
+//   padding-top: 100px;
+
+//   .container {
+//     padding-top: 100px;
+//     border-top: 1px solid $light-gray;
+//   }
+
+//   button {
+//     background-color: $light;
+//     font-family: "sofia-pro", sans-serif;
+
+//     &:hover {
+//       background-color: $primary-color;
+//       color: $light;
+//     }
+//   }
+
+//   button + button {
+//     margin-left: 20px;
+//   }
+// }
+
+#mot_president {
+  background-color: $light;
+  width: 100vw;
+  animation: slide-to-top 500ms;
+  padding-bottom: 150px;
+
+  .container {
+    .col-g {
+      h3 {
+        color: $secondary-color;
+        margin: 250px auto 50px auto;
+
+        strong {
+          font-weight: 700;
+        }
+      }
+      p {
+        em {
+          color: $primary-color;
+          text-align: right;
+          font-style: italic;
+        }
+      }
+
+      p:has(em) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+#confiance {
+  background-color: $dark-dark-gray;
+  padding: 250px 0 150px 0;
+
+  .container {
+    text-align: center;
+
+    h2 {
+      font-weight: 200;
+      color: $secondary-color;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    p {
+      margin: 50px auto;
+      text-align: center;
+      font-weight: 400;
+      color: $dark-gray;
+    }
+
+    .table_qualite {
+      display: flex;
+      gap: 50px;
+      justify-content: space-around;
+      margin-bottom: 80px;
+
+      .card_qualite {
+        width: 30%;
+        text-align: center;
+
+        h4 {
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          color: $light;
+        }
+
+        img {
+          color: $primary-color;
+        }
+
+        p {
+          margin: 30px auto 10px auto;
+          display: block;
+          color: $light;
+
+          &::after {
+            content: "→";
+            color: $light;
+            display: block;
+            margin-top: 10px;
+          }
+        }
+
+        img {
+          max-width: 80px;
+          margin: auto;
+          margin-bottom: 30px;
+        }
+      }
+
+      .card_qualite + .card_qualite {
+        border-left: 1px solid $dark-gray;
+        padding-left: 50px;
+      }
+    }
+
+    .cta {
+      border-radius: 0px;
+      letter-spacing: 5px;
+      font-size: 0.9rem;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}
+
+// #disclaimer {
+//   position: relative;
+//   top: -300px;
+
+//   .container {
+//     width: 80vw;
+//     position: relative;
+//     margin-right: 0;
+//     margin-left: auto;
+//     height: 600px;
+
+//     img {
+//       max-height: 100%;
+//       text-align: right;
+//       margin-right: 0;
+//       margin-left: auto;
+//     }
+
+//     .box-content {
+//       position: absolute;
+//       top: 15%;
+//       background-color: $secondary-color;
+//       width: calc(50% - 100px);
+//       height: calc(70% - 100px);
+//       padding: 50px;
+
+//       h3 {
+//         color: $light;
+//         font-weight: 300;
+
+//         strong {
+//           font-weight: 700;
+//         }
+//       }
+
+//       p {
+//         color: $light;
+//         margin: 30px auto;
+//       }
+//     }
+//   }
+// }
+
+#actualites {
+  background-color: $light-gray;
+  .container {
+    padding: 100px 0;
+    border-bottom: 1px solid $middle-gray;
+
+    .intro_actu,
+    .grid_articles {
+      display: flex;
+      gap: 50px;
+    }
+
+    .intro_actu {
+      margin-bottom: 100px;
+
+      span {
+        width: 50%;
+
+        h2 {
+          color: $secondary-color;
+        }
+        p {
+          padding-top: 60px;
+        }
+      }
+    }
+
+    .grid_articles {
+      .card_article {
+        width: 50%;
+
+        .metaData {
+          .puntSep {
+            color: $primary-color;
+            margin: 0 20px;
+          }
+
+          a,
+          p {
+            color: $middle-gray;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 0.9rem;
+          }
+        }
+        h3 {
+          font-weight: 800;
+          color: $secondary-color;
+          margin-bottom: 30px;
+        }
+        &:last-child {
+          margin-top: 100px;
+        }
+      }
+    }
+
+    .view_more {
+      text-align: center;
+      margin-top: 200px;
+
+      .cta {
+        margin: auto;
+        padding: 10px 100px;
+
+        &::before {
+          margin-left: -100px;
+        }
+      }
+    }
+  }
+}
+
+#disclaimer_banner {
+  background-color: $light;
+  min-height: 400px;
+  padding-top: 150px;
+
+  .container {
+    min-height: 0px;
+    width: 80vw;
+
+    position: relative;
+    z-index: 2;
+    color: $light;
+    padding: 40px 100px;
+
+    h3,
+    p {
+      color: $light;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 2.3rem;
+      line-height: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      color: $primary-color;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 10px;
+    }
+
+    .cta {
+      position: absolute;
+      top: calc((100% - 44px) / 2);
+      left: 50%;
+      z-index: 10;
+      background: $primary-color;
+      border: $primary-color;
+
+      &:hover {
+        border-color: $secondary-color;
+      }
+    }
+  }
+}
+
+#contact {
+  background-color: $light-gray !important;
+}

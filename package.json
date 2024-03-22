@@ -1,7 +1,7 @@
 {
   "name": "gites-lastrijk",
   "version": "1.0.0",
-  "description": "",
+  "description": "Template gites La Strijk",
   "main": "index.js",
   "scripts": {
     "build": "webpack"
@@ -22,6 +22,7 @@
     "in-view": "^0.6.1",
     "jQuery": "^1.7.4",
     "lodash": "^4.17.21",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "gsap": "^3.12.5"
   }
 }
