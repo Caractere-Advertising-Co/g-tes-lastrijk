@@ -1,0 +1,34 @@
+#section-introduction {
+  padding-bottom: 150px;
+  border-bottom: 1px solid $light-gray;
+  .col-g {
+    h2 {
+      margin-bottom: 200px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+
+      strong {
+        color: $primary-color;
+        font-weight: 200;
+      }
+    }
+
+    .img-content {
+      width: 100%;
+      max-height: 800px;
+      overflow: hidden;
+    }
+  }
+
+  .col-d {
+    margin: 100px 0 0 auto;
+
+    .cta-border {
+      display: block;
+      width: fit-content;
+      margin-top: 50px;
+      color: $primary-color;
+      margin-left: 0;
+    }
+  }
+}
