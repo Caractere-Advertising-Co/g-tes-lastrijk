@@ -625,3 +625,51 @@ form {
     }
   }
 }
+
+.error404 {
+  position: relative;
+
+  header {
+    .header {
+      .col-g {
+        img {
+          filter: brightness(0);
+        }
+      }
+
+      .primary-navigation {
+        #menu-navigation-principale,
+        #menu-navigation-principale-neerlandais {
+          li {
+            a {
+              color: $primary-color;
+            }
+          }
+
+          .cta {
+            a {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #section-404 {
+    height: 40vh;
+    padding-top: 300px;
+
+    h1 {
+      font-size: 12rem;
+    }
+
+    h2 {
+      margin: 50px auto;
+    }
+
+    .cta {
+      margin: auto;
+    }
+  }
+}

@@ -1,4 +1,30 @@
-.page-template-simple-page {
+.gites-template {
+  #header {
+    height: 700px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      filter: brightness(0.4);
+    }
+
+    .container {
+      margin-top: 250px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+
+      h1 {
+        color: $light;
+      }
+
+      span {
+        margin: auto;
+        margin-top: 50px;
+      }
+    }
+  }
   #simple-page,
   #section_bleue,
   #outro {
@@ -96,19 +122,53 @@
     }
   }
 
-  #section_bleue {
-    background-color: $secondary-color;
-    padding-bottom: 30px;
+  #photo-separator {
+    max-height: 600px;
+    overflow: hidden;
+  }
+
+  #section-extra {
+    background: none !important;
+
+    &::before {
+      background: none;
+      display: none;
+    }
 
     .container {
-      .cold {
-        p,
-        li {
-          color: $light;
+      .col-g {
+        p {
+          color: $dark-dark-gray;
         }
-        a {
-          color: $light !important;
-          text-decoration: none;
+
+        .subtitle {
+          color: $dark-dark-gray;
+        }
+
+        .cta-reser {
+          img {
+            filter: brightness(0);
+          }
+        }
+      }
+
+      .col-d {
+        .swiper-extra {
+          .swiper-wrapper {
+            .swiper-slide {
+              background-color: $light-gray;
+            }
+          }
+
+          .swiper-pagination {
+            .swiper-pagination-bullet {
+              border: 1px solid $primary-color;
+            }
+          }
+        }
+
+        .swiper-button-next {
+          display: none;
         }
       }
     }

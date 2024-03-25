@@ -1,0 +1,28 @@
+.booking {
+  width: 50vw;
+  background-color: #fff;
+  height: 50px;
+  position: absolute;
+  bottom: 100px;
+  z-index: 999;
+  left: 25vw;
+
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 10px 30px;
+    height: calc(100% - 20px);
+  }
+
+  p + p {
+    border-left: 1px solid $light-gray;
+  }
+
+  .gold {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}

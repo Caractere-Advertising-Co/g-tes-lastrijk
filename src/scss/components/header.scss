@@ -22,6 +22,7 @@
   z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   &.borBot {
     border-bottom: 1px solid $light-gray;

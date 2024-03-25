@@ -74,10 +74,10 @@ function add_custom_post_gîtes() {
 		'search_items'          => __( 'Recherche', 'custom_post_type' ),
 		'not_found'             => __( 'Non trouvé', 'custom_post_type' ),
 		'not_found_in_trash'    => __( 'Non trouvé', 'custom_post_type' ),
-		'featured_image'        => __( 'Photo de profil', 'custom_post_type' ),
-		'set_featured_image'    => __( 'Définir la photo de profil', 'custom_post_type' ),
-		'remove_featured_image' => __( 'Retirer la photo de profil', 'custom_post_type' ),
-		'use_featured_image'    => __( 'Utiliser comme photo de profil', 'custom_post_type' ),
+		'featured_image'        => __( 'Miniature', 'custom_post_type' ),
+		'set_featured_image'    => __( 'Définir la miniature', 'custom_post_type' ),
+		'remove_featured_image' => __( 'Retirer la miniature', 'custom_post_type' ),
+		'use_featured_image'    => __( 'Utiliser comme miniature', 'custom_post_type' ),
 		'insert_into_item'      => __( 'Insérer', 'custom_post_type' ),
 		'uploaded_to_this_item' => __( 'Uploader', 'custom_post_type' ),
 		'items_list'            => __( 'List', 'custom_post_type' ),
@@ -88,7 +88,6 @@ function add_custom_post_gîtes() {
 		'label'                 => __( 'Gîtes', 'custom_post_type' ),
 		'description'           => __( 'Gîtes de La Strijk', 'custom_post_type' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title' ),
 		'taxonomies'            => array( 'gîtes' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -98,12 +97,13 @@ function add_custom_post_gîtes() {
 		'menu_icon'             => 'dashicons-feedback',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
+		'supports'				=> array('title', 'revisions', 'author', 'thumbnail'),
 		'can_export'            => true,
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
+		'capability_type'		=> 'post',
 	);
-	register_post_type( 'Gîtes', $args );
+	register_post_type( 'gites', $args );
 }
 add_action( 'init', 'add_custom_post_gîtes', 0 );
