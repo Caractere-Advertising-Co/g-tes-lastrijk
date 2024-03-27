@@ -1,4 +1,9 @@
 <?php
+
+add_filter('woocommerce_resize_images', static function() {
+    return false;
+});
+
 // Menu 
 register_nav_menus( array(
     'megamenu' => 'Mega Menu',

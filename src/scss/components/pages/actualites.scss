@@ -1,6 +1,6 @@
 .page-template-actualites {
-  #introduction {
-    padding-top: 300px;
+  #simple-page {
+    padding-top: 100px;
 
     .container {
       .colg {
@@ -136,5 +136,43 @@
 
   .section_vosp {
     padding-top: 150px;
+  }
+
+  #nos-campagnes {
+    padding: 100px 0;
+    border-bottom: 1px solid $light-gray;
+
+    h2 {
+      text-align: center;
+      color: $dark-dark-gray;
+
+      strong {
+        color: $primary-color;
+      }
+    }
+  }
+
+  #banner-fullwidth {
+    background: none;
+
+    .container {
+      .subtitle {
+        color: $dark-gray;
+      }
+
+      h2 {
+        color: $dark-gray;
+
+        strong {
+          color: $primary-color;
+        }
+      }
+
+      .cta {
+        background: none;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+      }
+    }
   }
 }
