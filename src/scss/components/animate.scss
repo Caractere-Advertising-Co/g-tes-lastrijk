@@ -89,3 +89,13 @@
     bottom: 3px;
   }
 }
+
+.rotate-anim {
+  animation: rotate 5s linear infinite;
+  transform-origin: left bottom;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

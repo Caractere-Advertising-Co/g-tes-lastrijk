@@ -11,7 +11,10 @@ $cttCol2 = get_field('contenu_colonne_2','options');
 
 $cttCol3 = get_field('contenu_colonne_3','options');
 
-?>
+
+if(!is_front_page()):
+    get_template_part( 'templates-parts/section-bannerfullwidth' );
+endif;?>
 
 <footer>
     <div class="container">

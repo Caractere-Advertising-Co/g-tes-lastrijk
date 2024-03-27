@@ -10,6 +10,10 @@
     position: relative;
     width: calc(50% - 160px);
 
+    p {
+      margin-top: 20px;
+    }
+
     .cta-border {
       margin-left: 0;
       color: $primary-color;
@@ -42,6 +46,10 @@
     background: $light;
     position: relative;
     width: calc(50% - 160px);
+
+    p {
+      margin-top: 20px;
+    }
 
     .cta-border {
       margin-left: 0;

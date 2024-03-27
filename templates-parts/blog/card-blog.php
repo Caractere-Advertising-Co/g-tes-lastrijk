@@ -17,7 +17,7 @@ endif;
         <div class="col-g">
             <?php if($titre): echo $titre;endif;?>
             <?php if($intro): echo $intro;endif;?>
-            <a href="<?php echo the_permalink( );?>" class="cta-border">test</a>
+            <a href="<?php echo the_permalink( );?>" class="cta-border"><?php the_title();?></a>
         </div>
 
         <div class="col-d">
@@ -34,7 +34,7 @@ endif;
         <div class="col-d">
             <?php if($titre): echo $titre;endif;?>
             <?php if($intro): echo $intro;endif;?>
-            <a href="<?php echo the_permalink( );?>" class="cta-border">test</a>
+            <a href="<?php echo the_permalink( );?>" class="cta-border"><?php the_title();?></a>
         </div>
     </div>  
 <?php endif;?>

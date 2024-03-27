@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".type-reference").on("click", show_ref_popup);
+  $(".views-rooms").on("click", show_ref_popup);
 
   function show_ref_popup(e) {
     e.preventDefault();
@@ -7,8 +7,9 @@ $(document).ready(function () {
 
     console.log(ref);
 
-    $("#popup_reference").css("display", "flex");
+    $("#modal-chambre").css("display", "flex");
 
+    console.log($("#modal-chambre"));
     $.ajax({
       type: "POST",
       url: "/wp-admin/admin-ajax.php",
@@ -21,18 +22,9 @@ $(document).ready(function () {
         if (res.template_content && res.template_content.trim() !== "") {
           $(".container_popup").empty().append(res.template_content);
 
-          const swiper_thumbs = new Swiper(".swiper-thumbs", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
-          });
-
           // Initialisation du Swiper une fois que le contenu est ajouté
           const swiper_ref = new Swiper(".swiper-reference", {
             cssMode: true,
-            autoplay: true,
-            loop: true,
             navigation: {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
@@ -46,18 +38,13 @@ $(document).ready(function () {
   }
 
   $(document).on("click", function (event) {
-    if (
-      !$(event.target).closest(
-        ".container_popup, .type-reference, .see-details-fp"
-      ).length ||
-      $(event.target).hasClass("close")
-    ) {
+    if ($(event.target).hasClass("close")) {
       closePopup();
     }
   });
 
   function closePopup() {
     $(".container_popup").empty();
-    $("#popup_reference").hide();
+    $("#modal-chambre").hide();
   }
 });

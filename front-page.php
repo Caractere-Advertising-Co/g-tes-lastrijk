@@ -14,11 +14,11 @@ get_header();?>
                     <?php if($bg):?>
                         <div class="swiper-slide">
                             <img src="<?php echo $bg['url'];?>" alt="bg_slider" />
-                            <div class="content">
-                                <p class="baseline"><?php echo get_sub_field('sous-titre');?></p>
-                                <?php echo get_sub_field('titre');?>
-                                <?php if($cta):?><a href="<?php echo $cta['url'];?>" class="cta-border"><?php echo $cta['title'];?></a><?php endif;?>
-                            </div>
+                                <div class="content">
+                                    <p class="baseline"><?php echo get_sub_field('sous-titre');?></p>
+                                    <?php echo get_sub_field('titre');?>
+                                    <?php if($cta):?><a href="<?php echo $cta['url'];?>" class="cta-border"><?php echo $cta['title'];?></a><?php endif;?>
+                                </div>
                         </div>
                     <?php endif;
                 endwhile;
@@ -28,19 +28,24 @@ get_header();?>
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="booking">
+    <!--<div class="booking">
         <p>Nos Gites</p>
         <p>Check-in</p>
         <p>Check-out</p>
         <p>Personne(s)</p>
         <p class="gold">Check-now</p>
-        
-    </div>
+    </div>-->
 
+    <div class="booking">
+        <?php echo do_shortcode(get_field('booking-vikbooking','options'));?>
+    </div>
+    
     <span class="rotate-reverse cta-hero">
         <?php get_template_part( 'templates-parts/cta-reservation' );?>
     </span>
 </section>
+
+
 
 <section id="card-gites">
     <div class="container columns nomobile">

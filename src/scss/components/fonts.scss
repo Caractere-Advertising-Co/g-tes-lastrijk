@@ -3,6 +3,11 @@
   src: url("../../assets/fonts/GildaDisplay-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Jost";
+  src: url("../../assets/fonts/Jost-VariableFont_wght.ttf");
+}
+
 h1,
 h2,
 h3,
@@ -18,11 +23,11 @@ li,
 a {
   text-wrap: pretty;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-align: justify;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jost", "Montserrat", sans-serif;
 }
 
 h1 {

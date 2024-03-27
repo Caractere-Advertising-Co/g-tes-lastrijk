@@ -77,32 +77,51 @@ $(document).ready(function () {
 
   /* Scroll animation */
 
-  gsap.to(".anim-img-1", {
-    y: 300,
-    duration: 1.5,
-    ease: "power1.out",
-    scrollTrigger: {
-      trigger: ".galeries-home",
-      scrub: true,
-    },
-  });
+  if (window.location.pathname == "/") {
+    gsap.to(".anim-img-1", {
+      y: 300,
+      duration: 1.5,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: ".galeries-home",
+        scrub: true,
+      },
+    });
 
-  gsap.to(".anim-img-2", {
-    y: -500,
-    duration: 2.5,
-    ease: "power1.out",
-    scrollTrigger: {
-      trigger: ".galeries-home",
-      scrub: true,
-    },
-  });
+    gsap.to(".anim-img-2", {
+      y: -500,
+      duration: 2.5,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: ".galeries-home",
+        scrub: true,
+      },
+    });
 
-  gsap.to(".anim-img-3", {
-    y: -300,
-    duration: 2.5,
-    ease: "power1.out",
-    scrollTrigger: {
-      trigger: ".galeries-home",
-    },
-  });
+    gsap.to(".anim-img-3", {
+      y: -300,
+      duration: 2.5,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: ".galeries-home",
+      },
+    });
+  }
 });
+
+/* Accordion animation */
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}

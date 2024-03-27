@@ -246,29 +246,6 @@
   }
 }
 
-// #section_nosproduits {
-//   padding-top: 100px;
-
-//   .container {
-//     padding-top: 100px;
-//     border-top: 1px solid $light-gray;
-//   }
-
-//   button {
-//     background-color: $light;
-//     font-family: "sofia-pro", sans-serif;
-
-//     &:hover {
-//       background-color: $primary-color;
-//       color: $light;
-//     }
-//   }
-
-//   button + button {
-//     margin-left: 20px;
-//   }
-// }
-
 #mot_president {
   background-color: $light;
   width: 100vw;
@@ -380,49 +357,6 @@
   }
 }
 
-// #disclaimer {
-//   position: relative;
-//   top: -300px;
-
-//   .container {
-//     width: 80vw;
-//     position: relative;
-//     margin-right: 0;
-//     margin-left: auto;
-//     height: 600px;
-
-//     img {
-//       max-height: 100%;
-//       text-align: right;
-//       margin-right: 0;
-//       margin-left: auto;
-//     }
-
-//     .box-content {
-//       position: absolute;
-//       top: 15%;
-//       background-color: $secondary-color;
-//       width: calc(50% - 100px);
-//       height: calc(70% - 100px);
-//       padding: 50px;
-
-//       h3 {
-//         color: $light;
-//         font-weight: 300;
-
-//         strong {
-//           font-weight: 700;
-//         }
-//       }
-
-//       p {
-//         color: $light;
-//         margin: 30px auto;
-//       }
-//     }
-//   }
-// }
-
 #actualites {
   background-color: $light-gray;
   .container {
@@ -490,55 +424,6 @@
         &::before {
           margin-left: -100px;
         }
-      }
-    }
-  }
-}
-
-#disclaimer_banner {
-  background-color: $light;
-  min-height: 400px;
-  padding-top: 150px;
-
-  .container {
-    min-height: 0px;
-    width: 80vw;
-
-    position: relative;
-    z-index: 2;
-    color: $light;
-    padding: 40px 100px;
-
-    h3,
-    p {
-      color: $light;
-      margin-bottom: 0;
-    }
-
-    h3 {
-      font-size: 2.3rem;
-      line-height: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    h4 {
-      text-transform: uppercase;
-      color: $primary-color;
-      font-size: 1rem;
-      font-weight: 400;
-      letter-spacing: 10px;
-    }
-
-    .cta {
-      position: absolute;
-      top: calc((100% - 44px) / 2);
-      left: 50%;
-      z-index: 10;
-      background: $primary-color;
-      border: $primary-color;
-
-      &:hover {
-        border-color: $secondary-color;
       }
     }
   }

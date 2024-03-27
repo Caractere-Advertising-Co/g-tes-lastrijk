@@ -512,18 +512,11 @@ form {
       display: block;
     }
   }
-
-  .price {
-    color: $primary-color !important;
-    font-weight: 600;
-    margin-top: 20px;
-    font-size: 1.5rem !important;
-  }
 }
 
 /* Popup */
 
-#popup_reference {
+#modal-chambre {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 11;
@@ -536,44 +529,32 @@ form {
   justify-content: center;
 
   .container_popup {
-    width: 90vw;
+    width: 80vw;
 
     .popup-content {
       display: flex;
-      background-color: #fff;
 
       .close {
         position: absolute;
-        right: 5vw;
-        top: 5vh;
+        right: 30px;
+        top: -30px;
         text-align: center;
-        background: #fff;
+        background: $light;
         padding: 5px;
-        color: #666;
+        color: $dark-gray;
         width: 22px;
         cursor: pointer;
         z-index: 10;
-      }
-
-      .col_details {
-        width: 25%;
-        height: 80vh;
-        background-color: #fff;
-        padding: 5vh 2vw;
-
-        p {
-          width: 90%;
-          font-size: 0.7em;
-          text-align: justify;
-        }
+        font-family: "Montserrat", sans-serif;
       }
 
       .col-slider {
-        width: 75%;
-        height: 90vh;
+        width: 100%;
+        position: relative;
+        height: 80vh;
 
         .full-size {
-          height: 90vh;
+          height: 80vh;
           background-repeat: no-repeat !important;
           background-size: cover !important;
           background-position: center center !important;
@@ -583,43 +564,38 @@ form {
       .swiper-reference {
         height: 100%;
 
+        .swiper-wrapper {
+          width: 90%;
+          margin: auto;
+
+          .swiper-slide {
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: center center;
+          }
+        }
+
         .swiper-button-next,
         .swiper-button-prev {
-          background: #fff;
+          background: $primary-color;
           height: 50px;
           width: 50px;
           aspect-ratio: 1;
           position: absolute;
           bottom: 0;
-          top: auto;
+          top: 50%;
           left: auto;
-          right: 1px;
+          right: 40px;
 
           &::after {
-            color: #bbb;
+            color: $light;
             font-size: 1em;
           }
         }
 
         .swiper-button-prev {
-          right: 51px;
-          border-right: 1px solid #eee;
-        }
-
-        .swiper-slide {
-          background-repeat: no-repeat !important;
-          background-size: cover !important;
-          background-position: center center;
-        }
-      }
-
-      .swiper-thumbs {
-        .swiper-slide {
-          height: 20vh;
-
-          img {
-            width: 100%;
-          }
+          right: auto;
+          left: 40px;
         }
       }
     }
@@ -673,3 +649,46 @@ form {
     }
   }
 }
+
+// #disclaimer {
+//   position: relative;
+//   top: -300px;
+
+//   .container {
+//     width: 80vw;
+//     position: relative;
+//     margin-right: 0;
+//     margin-left: auto;
+//     height: 600px;
+
+//     img {
+//       max-height: 100%;
+//       text-align: right;
+//       margin-right: 0;
+//       margin-left: auto;
+//     }
+
+//     .box-content {
+//       position: absolute;
+//       top: 15%;
+//       background-color: $secondary-color;
+//       width: calc(50% - 100px);
+//       height: calc(70% - 100px);
+//       padding: 50px;
+
+//       h3 {
+//         color: $light;
+//         font-weight: 300;
+
+//         strong {
+//           font-weight: 700;
+//         }
+//       }
+
+//       p {
+//         color: $light;
+//         margin: 30px auto;
+//       }
+//     }
+//   }
+// }

@@ -1,4 +1,6 @@
-const swiper = new Swiper(".swiper-hero", {
+/* Home page */
+
+const swiperHero = new Swiper(".swiper-hero", {
   loop: true,
   autoplay: false,
   cssMode: true,
@@ -29,27 +31,7 @@ const swiperCard = new Swiper(".swiper-card", {
   autoplay: false,
 });
 
-const swiperAbout = new Swiper(".swiper-about", {
-  cssMode: true,
-  loop: true,
-  slidesPerView: 1,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-const swiperBlog = new Swiper(".swiper-blog", {
-  cssMode: true,
-  loop: true,
-  slidesPerView: 1,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+/* Commun */
 
 const swiperExtra = new Swiper(".swiper-extra", {
   loop: true,
@@ -74,5 +56,28 @@ const swiperExtra = new Swiper(".swiper-extra", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
+  },
+});
+
+/* Page Gites */
+
+const swiperRooms = new Swiper(".swiper-chambres", {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-chambre-button-next",
+    prevEl: ".swiper-chambre-button-prev",
+  },
+});
+
+const swiperAcco = new Swiper(".swiper-acco", {
+  slidesPerView: 1,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-acco-button-next",
+    prevEl: ".swiper-acco-button-prev",
   },
 });
