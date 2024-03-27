@@ -123,39 +123,93 @@
     }
   }
 
-  #confiance {
-    background-color: $light;
-    padding-top: 50px;
+  #widget-contact {
+    padding: 100px 0;
+    .container {
+      justify-content: space-between;
+      gap: auto;
 
-    .table_qualite {
-      display: flex;
-      gap: 50px;
-      justify-content: space-around;
-      margin-bottom: 80px;
-
-      .card_qualite {
-        width: 30%;
-        text-align: center;
-
-        h4 {
-          font-weight: 700;
-          font-size: 1.5rem;
-          line-height: 1.8rem;
-          color: $dark-gray;
+      .content-icons {
+        display: flex;
+        .block-img {
+          height: 50px;
+          width: 50px;
         }
 
-        p {
-          color: $dark-gray;
+        .txt-icons {
+          .subtitle {
+            color: $dark-dark-gray;
+            margin-bottom: 0;
+            letter-spacing: 0;
+          }
 
-          &::after {
-            color: $dark-gray;
+          a {
+            color: $primary-color;
+            font-size: 1.5rem;
+            font-weight: 400;
           }
         }
       }
+    }
+  }
 
-      .card_qualite + .card_qualite {
-        border-left: 1px solid $light-gray;
-        padding-left: 50px;
+  gmp-map {
+    height: 500px;
+  }
+
+  #experience-unique {
+    position: relative;
+    background: $secondary-color;
+    margin-top: 200px;
+    padding: 100px 0;
+
+    .img-g {
+      position: absolute;
+      left: 0;
+      top: -100px;
+      width: calc(50vw - 50px);
+      height: 1000px;
+    }
+
+    .container {
+      .col-d {
+        padding-top: 200px;
+
+        h2 {
+          margin-bottom: 30px;
+        }
+        p {
+          color: $light;
+        }
+
+        .img-du {
+          margin-top: 50px;
+          height: 700px;
+        }
+      }
+    }
+  }
+
+  #banner-fullwidth {
+    background: none;
+
+    .container {
+      .subtitle {
+        color: $dark-gray;
+      }
+
+      h2 {
+        color: $dark-gray;
+
+        strong {
+          color: $primary-color;
+        }
+      }
+
+      .cta {
+        background: none;
+        color: $primary-color;
+        border: 1px solid $primary-color;
       }
     }
   }
