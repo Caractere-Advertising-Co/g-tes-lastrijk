@@ -33,7 +33,7 @@ endif;?>
             <?php if(!is_page_template( 'services.php' )):?>
                 <img src="<?php echo $thmb;?>"/>
             <?php else :?>
-                <img src="<?php echo $thmb['url'];?>" alt="<?php echo $thm['title'];?>"/>
+                <img src="<?php echo $thmb['url'];?>" alt="<?php echo $thmb['title'];?>"/>
             <?php endif;?>
         </div>
     </div>
@@ -43,7 +43,7 @@ endif;?>
             <?php if(!is_page_template( 'services.php' )):?>
                 <img src="<?php echo $thmb;?>"/>
             <?php else :?>
-                <img src="<?php echo $thmb['url'];?>" alt="<?php echo $thm['title'];?>"/>
+                <img src="<?php echo $thmb['url'];?>" alt="<?php echo $thmb['title'];?>"/>
             <?php endif;?>
         </div>
         <div class="col-d">
