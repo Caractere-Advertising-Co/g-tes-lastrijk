@@ -23,76 +23,45 @@
     color: #fff;
   }
 
-  .plugin-container {
-    .vbdivsearch {
-      width: calc(100% - 20px);
-      padding: 0 20px;
-      background: transparent;
+  .research-bar {
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-      form {
-        padding-top: 0;
+    .research-bar__item {
+      display: flex;
+      padding-left: 20px;
 
-        .vbo-search-num-aduchild-block {
-          flex: auto;
-        }
+      .research-bar__item--input {
+        border: none;
+        height: 40px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+      }
+    }
 
-        .vb-search-inner {
-          justify-content: space-between;
-          align-items: center;
+    .research-bar__item + .research-bar__item {
+      border-left: 1px solid $light-gray;
+      padding-left: 20px;
+    }
 
-          .input-group {
-            margin-top: -30px;
+    .button {
+      padding-left: 0 !important;
 
-            #checkindate,
-            #checkoutdate,
-            .vbo-caltrigger {
-              background: none;
-              border: none;
-            }
-          }
-        }
+      input {
+        background: $primary-color;
+        border-radius: 0;
+        height: 50px;
 
-        .vbo-search-inpblock {
-          margin: 0;
-          height: 20px;
-        }
-
-        .vbo-search-num-aduchild-entry {
-          margin: 0;
-          height: 50px;
-        }
-
-        .vbo-search-num-adults-entry {
-          display: flex;
-          align-items: center;
-          margin: auto;
-
-          .vbo-search-num-adults-entry-label {
-            width: 70px;
-            text-align: left;
-            margin: 0;
-          }
-        }
-
-        .vbdivsearch {
-          .vb-search-inner {
-            select {
-              border: none;
-            }
-          }
-        }
-
-        .vbo-search-submit {
-          margin: 0;
-          .btn {
-            background: $primary-color;
-            border-radius: 0;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 3px;
-            height: 50px;
-          }
-        }
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        border: none;
+        color: $light;
+        padding: 0px 20px;
       }
     }
   }

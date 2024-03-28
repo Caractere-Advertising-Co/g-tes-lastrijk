@@ -28,24 +28,46 @@ get_header();?>
         <div class="swiper-pagination"></div>
     </div>
 
-    <!--<div class="booking">
-        <p>Nos Gites</p>
-        <p>Check-in</p>
-        <p>Check-out</p>
-        <p>Personne(s)</p>
-        <p class="gold">Check-now</p>
-    </div>-->
-
     <div class="booking">
-        <?php echo do_shortcode(get_field('booking-vikbooking','options'));?>
+        <form class="research-bar" action="#" method="POST">
+            <div class="research-bar__item">
+                <input class="research-bar__item--input date" type="text" name="check-in" id="check-in" placeholder="Date d'arrivée" />
+            </div>
+            <div class="research-bar__item">
+                <input class="research-bar__item--input date" type="text" name="check-out" id="check-out" placeholder="Date de départ" />
+            </div>
+            <div class="research-bar__item">
+                <input class="research-bar__item--input people" type="text" name="people" id="people" placeholder="Personnes" />
+            </div>
+            <div class="research-bar__item button">
+                <input type="submit" id="rechercher" value="Rechercher" />
+            </div>
+        </form>
+        
+        <div>
+        <?php if($_POST):
+                $checkin = $_POST['check-in'];
+                $checkout = $_POST['check-out'];
+                $persons = $_POST['people'];
+
+                $checkin = date("Y-m-d", strtotime($checkin));
+                $checkout = date("Y-m-d", strtotime($checkout));
+            endif;?>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>
+    jQuery(document).ready(function($){
+        $("#check-in, #check-out").datepicker({ dateFormat: 'dd/mm/yy' });
+    });
+    </script>
     
     <span class="rotate-reverse cta-hero">
         <?php get_template_part( 'templates-parts/cta-reservation' );?>
     </span>
 </section>
-
-
 
 <section id="card-gites">
     <div class="container columns nomobile">
@@ -98,8 +120,6 @@ get_header();?>
 <?php get_template_part( 'templates-parts/separator/tiny-separator' );?>
 <?php get_template_part( 'templates-parts/section-aubel' );?>   
 <?php get_template_part( 'templates-parts/section-citation' );?>
-<!-- <?php get_template_part( 'templates-parts/section-mots-president' );?> -->
-<!-- <?php get_template_part( 'templates-parts/section-introduction' );?> -->
 <?php get_template_part( 'templates-parts/section-two-columns-tit' );?>
 <?php get_template_part( 'templates-parts/section-extra' );?>
 

@@ -34,15 +34,16 @@ $txtIntro = get_field('introduction');
     </div>
 </header>
 
-
 <section id="simple-page">
     <div class="container intro">
         <?php if($surtitreIntro): echo '<p class="subtitle">'.$surtitre.'</p>';endif?>
         <?php if($titreIntro): echo $titreIntro;endif?>
         <?php if($txtIntro): echo $txtIntro; endif?>
     </div>
+</section>
 
-    <div class="container">
+<section id="liste-actualites">
+    <div class="container" >
         <?php if(have_rows('services')):
             $i = 0;
             while(have_rows('services')): the_row();
@@ -50,7 +51,6 @@ $txtIntro = get_field('introduction');
                 $i++;
             endwhile;
         endif; ?>
-
     </div>
 </section>
 

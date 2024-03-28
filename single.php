@@ -50,8 +50,5 @@ $ctaTr = get_field('cta-transition');
 
 <?php get_template_part( 'templates-parts/section-introduction' );?>
 
-<section id="simple-page">
-
-</section>
 
 <?php get_footer();

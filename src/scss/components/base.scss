@@ -51,6 +51,24 @@ header {
   }
 }
 
+/* Date Picker */
+
+#ui-datepicker-div {
+  .ui-state-default,
+  a {
+    margin-bottom: 0;
+    color: $dark-gray;
+    border: none;
+  }
+
+  .ui-state-highlight {
+    background: $primary-color;
+    color: $light;
+  }
+}
+
+/**/
+
 .content,
 .container {
   width: 80vw;
@@ -681,46 +699,3 @@ form {
     }
   }
 }
-
-// #disclaimer {
-//   position: relative;
-//   top: -300px;
-
-//   .container {
-//     width: 80vw;
-//     position: relative;
-//     margin-right: 0;
-//     margin-left: auto;
-//     height: 600px;
-
-//     img {
-//       max-height: 100%;
-//       text-align: right;
-//       margin-right: 0;
-//       margin-left: auto;
-//     }
-
-//     .box-content {
-//       position: absolute;
-//       top: 15%;
-//       background-color: $secondary-color;
-//       width: calc(50% - 100px);
-//       height: calc(70% - 100px);
-//       padding: 50px;
-
-//       h3 {
-//         color: $light;
-//         font-weight: 300;
-
-//         strong {
-//           font-weight: 700;
-//         }
-//       }
-
-//       p {
-//         color: $light;
-//         margin: 30px auto;
-//       }
-//     }
-//   }
-// }

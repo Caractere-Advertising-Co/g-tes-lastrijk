@@ -235,6 +235,77 @@
     .nomobile {
       display: none;
     }
+
+    .container {
+      .swiper {
+        .card {
+          position: relative;
+          height: 400px;
+          background-size: cover !important;
+
+          &::before {
+            content: "";
+            background-color: $secondary-color;
+            opacity: 0;
+            z-index: 0;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: block;
+            transition: all ease-in 200ms;
+          }
+
+          &:hover {
+            &::before {
+              opacity: 0.7;
+            }
+
+            &::after {
+              content: "+";
+              color: #fff;
+              position: absolute;
+              top: calc((100% - 60px) / 2);
+              left: calc((100% - 60px) / 2);
+              margin: auto;
+              font-size: 4rem;
+              background: #ffffff29;
+              width: 60px;
+              height: 60px;
+              line-height: 3.3rem;
+              text-align: center;
+              border-radius: 40px;
+              margin: 0;
+            }
+
+            .content {
+              opacity: 1;
+            }
+          }
+
+          .content {
+            position: absolute;
+            width: 100%;
+            left: 20px;
+            bottom: 20px;
+            opacity: 0;
+            transition: all ease 300ms;
+
+            h2 {
+              color: $light;
+            }
+
+            p {
+              color: $primary-color;
+              letter-spacing: 10px;
+              text-transform: uppercase;
+              font-weight: 400;
+              font-size: 0.9rem;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
   }
 
   #begin_entreprise {
@@ -304,6 +375,11 @@
         }
       }
     }
+  }
+
+  .page-template-services #liste-actualites {
+    padding-bottom: 0px;
+    border-bottom: 1px solid $light-gray;
   }
 
   #banner-fullwidth {
@@ -503,32 +579,6 @@
     }
   }
 
-  #statistique {
-    .container {
-      flex-direction: column;
-
-      .col-g {
-        width: 100%;
-        padding-top: 150px;
-      }
-
-      .col-d {
-        width: 100%;
-
-        .block_stats {
-          img {
-            width: 60%;
-            margin-left: 0;
-            position: relative;
-          }
-          span {
-            margin-top: 30px;
-          }
-        }
-      }
-    }
-  }
-
   #section-cta-contact {
     height: 600px;
 
@@ -629,130 +679,8 @@
     }
   }
 
-  // NOS SOLUTIONS
-
-  .page-template-nosolutions {
-    #intro_service {
-      .container {
-        .title_nos {
-          width: 100%;
-
-          h2 {
-            font-size: 1rem;
-          }
-
-          h1 {
-            font-size: 2.8rem;
-            line-height: 3rem;
-          }
-        }
-      }
-    }
-  }
-
-  // SERVICES
-  #intro_service {
-    .container {
-      .block_title {
-        min-width: inherit;
-        padding: 15px 30px;
-
-        h1 {
-          font-size: 2rem;
-          line-height: 2.3rem;
-        }
-      }
-
-      .colg {
-        width: 100%;
-      }
-
-      .cold {
-        padding-left: 10%;
-      }
-    }
-  }
-
-  #nos_points_fort {
-    .container {
-      .content_service {
-        padding: 100px 0 100px 10%;
-
-        .card_pf {
-          h4 {
-            font-size: 1rem;
-            line-height: 1.5rem;
-          }
-
-          p {
-            text-align: left;
-            line-height: 1.5rem;
-          }
-          ul {
-            li {
-              text-align: left;
-            }
-          }
-        }
-      }
-    }
-
-    #section-cta-contact {
-      margin-bottom: 0px;
-    }
-  }
-
   #section-cta-contact {
     padding-top: 100px;
-  }
-
-  // A PROPOS
-  #assurance {
-    padding-top: 50px !important;
-    padding-bottom: 50px;
-    .container {
-      .main-content {
-        flex-direction: column;
-
-        .col-g,
-        .col-d {
-          width: 100%;
-        }
-
-        .col-g {
-          img {
-            margin-top: 50px;
-            bottom: 0;
-            min-height: inherit;
-          }
-        }
-
-        .col-d {
-          padding-top: 50px;
-        }
-      }
-    }
-  }
-
-  #statistiques {
-    padding-top: 100px !important;
-
-    h2 {
-      margin: 50px auto !important;
-      font-size: 2rem !important;
-      line-height: 2.5rem;
-    }
-
-    .descr {
-      padding-left: 0 !important;
-    }
-
-    .grid_stats {
-      flex-wrap: wrap;
-      .block_stat {
-        width: calc((100% - 60px) / 2) !important;
-      }
-    }
   }
 
   #mot_president {
@@ -798,6 +726,13 @@
   }
 }
 
+/* Page Séminaire */
+
+#citation {
+  .top_content {
+    margin: 0 auto;
+  }
+}
 // Retina Screen
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
