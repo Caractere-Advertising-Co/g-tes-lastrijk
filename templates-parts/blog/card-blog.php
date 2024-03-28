@@ -16,8 +16,6 @@ if($args['id']):
     $i = $args['id'];
 endif;?>
 
-<?php var_dump($thmb);?>
-
 <?php if($i % 2):?>
     <div class="card-news -left container columns">
         <div class="col-g">
