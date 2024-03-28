@@ -34,6 +34,7 @@ $txtIntro = get_field('introduction');
     </div>
 </header>
 
+
 <section id="simple-page">
     <div class="container intro">
         <?php if($surtitreIntro): echo '<p class="subtitle">'.$surtitre.'</p>';endif?>
