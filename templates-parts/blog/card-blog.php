@@ -4,7 +4,7 @@ $thmb = get_the_post_thumbnail_url();
 $titre = get_field('titre');
 $intro = get_field('texte_introduction');
 
-if(is_page( 677 )):
+if(is_page_template( 'services.php' )):
     $thmb = get_sub_field('image-service');
     $titre = get_sub_field('titre');
     $intro = get_sub_field('texte_introduction');
@@ -28,8 +28,8 @@ endif;?>
         </div>
 
         <div class="col-d">
-            <?php if(!is_page( 677 )):?>
-                <img src="<?php echo $thmb['url'];?>"/>
+            <?php if(!is_page_template( 'services.php' )):?>
+                <img src="<?php echo $thmb;?>"/>
             <?php else :?>
                 <img src="<?php echo $thmb['url'];?>" alt="<?php echo $thm['title'];?>"/>
             <?php endif;?>
@@ -38,7 +38,7 @@ endif;?>
 <?php else : ?>
     <div class="card-news -right container columns">
         <div class="col-g">
-            <?php if(!is_page( 677 )):?>
+            <?php if(!is_page_template( 'services.php' )):?>
                 <img src="<?php echo $thmb;?>"/>
             <?php else :?>
                 <img src="<?php echo $thmb['url'];?>" alt="<?php echo $thm['title'];?>"/>
@@ -48,7 +48,7 @@ endif;?>
             <?php if($titre): echo $titre;endif;?>
             <?php if($intro): echo $intro;endif;?>
             
-            <?php if(!is_page( 677 )):?>
+            <?php if(!is_page_template( 'services.php' )):?>
                 <a href="<?php echo the_permalink( );?>" class="cta-border"><?php the_title();?></a>
             <?php endif;?>
         </div>
