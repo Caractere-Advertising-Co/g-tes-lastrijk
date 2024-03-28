@@ -39,7 +39,7 @@ $galerie = get_field('galerie_auble','options');?>
             <?php if($surtitre): echo '<h3>'.$surtitre.'</h3>'; endif;?>
             <?php if($txtNaissance): echo $txtNaissance; endif;?>
             <?php if($ctaNaiss):?>
-                <a href="<?php $ctaNaiss['url'];?>" class="cta-border"><?php $ctaNaiss['title'];?></a>
+                <a href="<?php echo $ctaNaiss['url'];?>" class="cta-border"><?php echo $ctaNaiss['title'];?></a>
             <?php endif;?>
         </div>
     </div>

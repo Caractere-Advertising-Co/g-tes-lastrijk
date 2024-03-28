@@ -57,12 +57,14 @@ get_header();?>
                     $cta = get_sub_field('lien_service');
                 ?>
 
-                    <div class="card" style="background:url('<?php echo $bg['url'];?>');"> 
-                        <div class="content from-bottom">
-                            <p>Découvrir</p>
-                            <h2><?php echo $nom;?></h2>
+                    <a href="<?php echo $cta['url'];?>">
+                        <div class="card" style="background:url('<?php echo $bg['url'];?>');"> 
+                            <div class="content from-bottom">
+                                <p>Découvrir</p>
+                                <h2><?php echo $nom;?></h2>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                 <?php endwhile;
             endif;?>
@@ -103,7 +105,16 @@ get_header();?>
 
 <section id="intro-actualites">
     <div class="container">
-        
+        <?php 
+            $surtitre = get_field('surtitre-actus');
+            $titre = get_field('titre-actus');
+            $intro = get_field('intro-actus');
+
+            if($surtitre): echo '<p class="subtitle">'.$surtitre.'</p>';endif;
+            if($titre): echo $titre;endif;
+            if($intro): echo $intro;endif;
+
+        ?>
     </div>
 </section>
 <?php get_template_part( 'templates-parts/separator/tiny-separator' );?>
@@ -127,6 +138,12 @@ get_header();?>
         endif;
 
         wp_reset_postdata();?>
+    </div>
+    <div class="container">
+        <?php $ctaActus = get_field('cta-actus');
+
+        if($ctaActus): echo '<a href="'.$ctaActus['url'].'" class="cta-border cta-actus">'.$ctaActus['title'].'</a>';endif;
+        ?>
     </div>
 </section>
 

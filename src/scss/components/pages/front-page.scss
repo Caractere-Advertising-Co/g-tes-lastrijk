@@ -87,70 +87,75 @@
   }
 
   .container {
-    .card {
+    a {
       width: 50%;
       height: 400px;
-      position: relative;
-      background-size: cover !important;
+      display: block;
 
-      &::before {
-        content: "";
-        background-color: $secondary-color;
-        opacity: 0;
-        z-index: 0;
+      .card {
         position: relative;
-        height: 100%;
-        width: 100%;
-        display: block;
-        transition: all ease-in 200ms;
-      }
+        height: 400px;
+        background-size: cover !important;
 
-      &:hover {
         &::before {
-          opacity: 0.7;
+          content: "";
+          background-color: $secondary-color;
+          opacity: 0;
+          z-index: 0;
+          position: relative;
+          height: 100%;
+          width: 100%;
+          display: block;
+          transition: all ease-in 200ms;
         }
 
-        &::after {
-          content: "+";
-          color: #fff;
-          position: absolute;
-          top: calc((100% - 60px) / 2);
-          left: calc((100% - 60px) / 2);
-          margin: auto;
-          font-size: 4rem;
-          background: #ffffff29;
-          width: 60px;
-          height: 60px;
-          line-height: 3.3rem;
-          text-align: center;
-          border-radius: 40px;
-          margin: 0;
+        &:hover {
+          &::before {
+            opacity: 0.7;
+          }
+
+          &::after {
+            content: "+";
+            color: #fff;
+            position: absolute;
+            top: calc((100% - 60px) / 2);
+            left: calc((100% - 60px) / 2);
+            margin: auto;
+            font-size: 4rem;
+            background: #ffffff29;
+            width: 60px;
+            height: 60px;
+            line-height: 3.3rem;
+            text-align: center;
+            border-radius: 40px;
+            margin: 0;
+          }
+
+          .content {
+            opacity: 1;
+          }
         }
 
         .content {
-          opacity: 1;
-        }
-      }
+          position: absolute;
+          width: 100%;
+          left: 20px;
+          bottom: 20px;
+          opacity: 0;
+          transition: all ease 300ms;
 
-      .content {
-        position: absolute;
-        width: 100%;
-        left: 20px;
-        bottom: 20px;
-        opacity: 0;
-        transition: all ease 300ms;
+          h2 {
+            color: $light;
+          }
 
-        h2 {
-          color: $light;
-        }
-
-        p {
-          color: $primary-color;
-          letter-spacing: 10px;
-          text-transform: uppercase;
-          font-weight: 400;
-          font-size: 0.9rem;
-          margin-bottom: 0;
+          p {
+            color: $primary-color;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -158,7 +163,10 @@
 }
 
 #liste-actualites {
-  padding-bottom: 450px;
+  padding-bottom: 550px;
+  .cta-actus {
+    margin: 100px auto;
+  }
 }
 
 #galerie-front {
@@ -277,154 +285,20 @@
   }
 }
 
-#confiance {
-  background-color: $dark-dark-gray;
-  padding: 250px 0 150px 0;
-
+#intro-actualites {
+  padding-top: 100px;
   .container {
-    text-align: center;
+    p,
+    h2 {
+      text-align: center;
+    }
 
     h2 {
-      font-weight: 200;
-      color: $secondary-color;
-
-      strong {
-        font-weight: 700;
-      }
+      margin-bottom: 30px;
     }
 
-    p {
-      margin: 50px auto;
-      text-align: center;
-      font-weight: 400;
-      color: $dark-gray;
-    }
-
-    .table_qualite {
-      display: flex;
-      gap: 50px;
-      justify-content: space-around;
-      margin-bottom: 80px;
-
-      .card_qualite {
-        width: 30%;
-        text-align: center;
-
-        h4 {
-          font-weight: 700;
-          font-size: 1.5rem;
-          line-height: 1.8rem;
-          color: $light;
-        }
-
-        img {
-          color: $primary-color;
-        }
-
-        p {
-          margin: 30px auto 10px auto;
-          display: block;
-          color: $light;
-
-          &::after {
-            content: "→";
-            color: $light;
-            display: block;
-            margin-top: 10px;
-          }
-        }
-
-        img {
-          max-width: 80px;
-          margin: auto;
-          margin-bottom: 30px;
-        }
-      }
-
-      .card_qualite + .card_qualite {
-        border-left: 1px solid $dark-gray;
-        padding-left: 50px;
-      }
-    }
-
-    .cta {
-      border-radius: 0px;
-      letter-spacing: 5px;
-      font-size: 0.9rem;
-      text-align: center;
-      margin: auto;
-    }
-  }
-}
-
-#actualites {
-  background-color: $light-gray;
-  .container {
-    padding: 100px 0;
-    border-bottom: 1px solid $middle-gray;
-
-    .intro_actu,
-    .grid_articles {
-      display: flex;
-      gap: 50px;
-    }
-
-    .intro_actu {
-      margin-bottom: 100px;
-
-      span {
-        width: 50%;
-
-        h2 {
-          color: $secondary-color;
-        }
-        p {
-          padding-top: 60px;
-        }
-      }
-    }
-
-    .grid_articles {
-      .card_article {
-        width: 50%;
-
-        .metaData {
-          .puntSep {
-            color: $primary-color;
-            margin: 0 20px;
-          }
-
-          a,
-          p {
-            color: $middle-gray;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            font-size: 0.9rem;
-          }
-        }
-        h3 {
-          font-weight: 800;
-          color: $secondary-color;
-          margin-bottom: 30px;
-        }
-        &:last-child {
-          margin-top: 100px;
-        }
-      }
-    }
-
-    .view_more {
-      text-align: center;
-      margin-top: 200px;
-
-      .cta {
-        margin: auto;
-        padding: 10px 100px;
-
-        &::before {
-          margin-left: -100px;
-        }
-      }
+    .subtitle {
+      color: $dark-dark-gray;
     }
   }
 }
