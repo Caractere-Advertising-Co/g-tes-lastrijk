@@ -48,7 +48,13 @@ endif;?>
     </div>
 
     <div class="booking">
-        <form class="research-bar" action="#" method="POST">
+        <form class="research-bar" action="<?php echo get_bloginfo('url').'/booking';?>" method="POST">
+            <div class="research-bar__item">
+                <select class="research-bar__item--input gites" name="gites">
+                    <option value="la-chapelle">La Chapelle</option>
+                    <option value="la-passerelle">La Passerelle</option>
+                </select>
+            </div>
             <div class="research-bar__item">
                 <input class="research-bar__item--input date" type="text" name="check-in" id="check-in" placeholder="Date d'arrivée" />
             </div>
@@ -57,7 +63,7 @@ endif;?>
             </div>
             <div class="research-bar__item">
                 <input class="research-bar__item--input people" type="text" name="people" id="people" placeholder="Personnes" />
-            </div>
+            </div>  
             <div class="research-bar__item button">
                 <input type="submit" id="rechercher" value="Rechercher" />
             </div>

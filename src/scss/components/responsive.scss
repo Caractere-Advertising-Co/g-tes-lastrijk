@@ -195,6 +195,34 @@
     }
   }
 
+  .booking {
+    bottom: 250px;
+    width: 90vw;
+    left: 5vw;
+
+    .research-bar {
+      flex-direction: column;
+
+      .research-bar__item {
+        background: $light;
+        padding: 0;
+
+        width: 100%;
+        input,
+        select {
+          margin: auto;
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      .research-bar__item + .research-bar__item {
+        padding-left: 0;
+        border: none;
+      }
+    }
+  }
+
   /* Home */
 
   .cta-hero {
@@ -202,7 +230,7 @@
   }
 
   #hero-container {
-    height: 80vh !important;
+    height: 90vh !important;
 
     .swiper {
       .swiper-wrapper {
@@ -219,15 +247,20 @@
             left: 10vw;
             right: auto;
             margin-top: 150px;
+
+            p {
+              letter-spacing: 4px;
+            }
+
+            h1 {
+              font-size: 2.5rem;
+              line-height: 2.5rem;
+              margin-top: 40px;
+              margin-bottom: 100px;
+            }
           }
         }
       }
-    }
-
-    .booking {
-      bottom: 80px;
-      width: 90vw;
-      left: 5vw;
     }
   }
 
