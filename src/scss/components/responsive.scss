@@ -30,8 +30,8 @@
   }
 
   h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2.8rem;
+    line-height: 3rem;
   }
 
   h2 {
@@ -40,6 +40,11 @@
   }
 
   // COMMUN
+
+  .subtitle {
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+  }
 
   .container.columns {
     flex-direction: column;
@@ -264,6 +269,19 @@
     }
   }
 
+  #section-introduction {
+    padding-bottom: 100px;
+    .col-g {
+      h2 {
+        margin-bottom: 50px;
+      }
+    }
+
+    .col-d {
+      margin-top: 0px;
+    }
+  }
+
   #card-gites {
     .nomobile {
       display: none;
@@ -365,12 +383,46 @@
     .container {
       .col-g {
         padding-top: 0;
+
+        .cta {
+          display: none;
+        }
+      }
+
+      .col-d {
+        display: flex;
+        gap: 30px;
+
+        .img-right {
+          margin-bottom: 50px;
+          width: 20%;
+
+          .from-bottom {
+            opacity: 1;
+          }
+        }
+
+        span {
+          width: 70%;
+        }
+      }
+    }
+
+    .nodesktop {
+      .container {
+        margin: auto;
+
+        a {
+          margin-left: auto;
+          margin-right: 0;
+        }
       }
     }
   }
 
   #section-extra {
     .container {
+      margin-top: 0px;
       .col-d {
         .swiper-button-next {
           display: none;
@@ -379,7 +431,15 @@
     }
   }
 
-  #liste-actualites {
+  .page-template-contact {
+    #contact {
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
+  }
+
+  #liste-actualites,
+  #simple-page {
     .container {
       flex-direction: row;
       .card-news.-left {
@@ -424,6 +484,10 @@
         margin: 50px auto 0;
       }
     }
+  }
+
+  .tiny-separator {
+    margin: 50px auto;
   }
 
   /********/
@@ -763,9 +827,40 @@
 
 #citation {
   .top_content {
-    margin: 0 auto;
+    margin: 100px auto;
   }
 }
+
+/* Page Contact */
+.page-template-contact {
+  #experience-unique {
+    padding: 0;
+    display: flex;
+    gap: 30px;
+
+    .img-g {
+      margin-top: -100px;
+      position: relative !important;
+      width: 25vw;
+    }
+
+    .container {
+      width: calc(70vw - 30px);
+      .col-d {
+        width: 95%;
+        padding-top: 50px;
+
+        .img-du {
+          height: 300px;
+          margin-bottom: 50px;
+          width: 90vw;
+          margin-left: -30vw;
+        }
+      }
+    }
+  }
+}
+
 // Retina Screen
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
