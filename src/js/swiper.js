@@ -4,6 +4,7 @@ const swiperHero = new Swiper(".swiper-hero", {
   loop: true,
   autoplay: false,
   cssMode: true,
+  clickable: true,
 
   pagination: {
     el: ".swiper-pagination",
@@ -69,6 +70,19 @@ const swiperRooms = new Swiper(".swiper-chambres", {
   navigation: {
     nextEl: ".swiper-chambre-button-next",
     prevEl: ".swiper-chambre-button-prev",
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
   },
 });
 
