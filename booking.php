@@ -4,12 +4,14 @@
 get_header();
 
 if($_POST):
-    $checkin = $_POST['check-in'];
-    $checkout = $_POST['check-out'];
-    $persons = $_POST['people'];
+    if($_POST['check-in']):
+        $checkin = $_POST['check-in'];
+        $checkout = $_POST['check-out'];
+        $persons = $_POST['people'];
 
-    $checkin = date("d-m-Y", strtotime($checkin));
-    $checkout = date("d-m-Y", strtotime($checkout));
+        $checkin = date("d-m-Y", strtotime($checkin));
+        $checkout = date("d-m-Y", strtotime($checkout));
+    endif;
 endif;
 
 $surtitre = get_field('surtitre');

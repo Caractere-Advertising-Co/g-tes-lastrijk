@@ -66,3 +66,69 @@
     }
   }
 }
+
+#booking-search {
+  padding: 100px 0;
+  .vbdivsearch .vb-search-inner {
+    justify-content: space-around;
+  }
+
+  .vbo-search-submit .btn,
+  .btn {
+    padding: 10px 50px !important;
+    background: $primary-color;
+    font-size: 0.8rem;
+    color: $light;
+    position: relative;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .vbo-results-head .vbo-results-head-det-lbl {
+    display: block;
+    font-size: 0.9em;
+    font-family: "Montserrat";
+    font-weight: 400;
+  }
+
+  ol.vbo-stepbar li.vbo-step-complete:before {
+    background-color: $primary-color;
+  }
+}
+
+/* Front-page search Vik */
+
+.vbdivsearch {
+  padding: 10px;
+  form {
+    padding-top: 0;
+
+    .vb-search-inner {
+      justify-content: space-between;
+      gap: 30px;
+
+      .vbo-search-inpblock {
+        .input-group {
+          input,
+          i {
+            margin-top: -30px !important;
+            background: none;
+          }
+        }
+      }
+
+      .vbo-search-submit .btn {
+        padding: 10px 50px !important;
+        background: $primary-color;
+        font-size: 0.8rem;
+        color: $light;
+        position: relative;
+        border-radius: 0;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-family: "Jost", sans-serif;
+      }
+    }
+  }
+}

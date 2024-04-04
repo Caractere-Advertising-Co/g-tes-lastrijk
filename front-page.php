@@ -29,7 +29,7 @@ get_header();?>
     </div>
 
     <div class="booking">
-        <form class="research-bar" action="<?php echo get_bloginfo('url').'/booking';?>" method="POST">
+        <!--<form class="research-bar" action="<?php echo get_bloginfo('url').'/booking';?>" method="POST">
             <div class="research-bar__item">
                 <select class="research-bar__item--input gites" name="gites">
                     <option value="la-chapelle">La Chapelle</option>
@@ -49,6 +49,7 @@ get_header();?>
                 <input type="submit" id="rechercher" value="Rechercher" />
             </div>
         </form>
+
         
         <div>
         <?php if($_POST):
@@ -59,7 +60,10 @@ get_header();?>
                 $checkin = date("Y-m-d", strtotime($checkin));
                 $checkout = date("Y-m-d", strtotime($checkout));
             endif;?>
-        </div>
+        </div>-->
+
+
+        <?php echo do_shortcode( '[vikbooking category_id="" view="vikbooking" lang="*"]');?>
     </div>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -75,6 +79,7 @@ get_header();?>
     </span>
 </section>
 
+<?php if(!$_POST): ?>
 <section id="card-gites">
     <div class="container columns nomobile">
         <?php 
@@ -203,5 +208,7 @@ get_header();?>
 
 <?php get_template_part( 'templates-parts/section-bannerfullwidth' );?>
 <?php get_template_part( 'templates-parts/contact' );?>
+
+<?php endif;?>
 
 <?php get_footer();?>

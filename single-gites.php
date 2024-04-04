@@ -68,17 +68,6 @@ endif;?>
                 <input type="submit" id="rechercher" value="Rechercher" />
             </div>
         </form>
-        
-        <div>
-        <?php if($_POST):
-                $checkin = $_POST['check-in'];
-                $checkout = $_POST['check-out'];
-                $persons = $_POST['people'];
-
-                $checkin = date("Y-m-d", strtotime($checkin));
-                $checkout = date("Y-m-d", strtotime($checkout));
-            endif;?>
-        </div>
     </div>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
