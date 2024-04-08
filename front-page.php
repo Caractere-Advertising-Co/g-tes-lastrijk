@@ -51,7 +51,7 @@ get_header();?>
         </form>
 
         
-       <!-- <div>
+        <div>
         <?php if($_POST):
                 $checkin = $_POST['check-in'];
                 $checkout = $_POST['check-out'];
@@ -61,9 +61,6 @@ get_header();?>
                 $checkout = date("Y-m-d", strtotime($checkout));
             endif;?>
         </div>
-
-
-        <?php echo do_shortcode( '[vikbooking category_id="" view="vikbooking" lang="*"]');?>
     </div>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -72,7 +69,7 @@ get_header();?>
     jQuery(document).ready(function($){
         $("#check-in, #check-out").datepicker({ dateFormat: 'dd/mm/yy' });
     });
-    </script>-->
+    </script>
     
     <span class="rotate-reverse cta-hero">
         <?php get_template_part( 'templates-parts/cta-reservation' );?>
