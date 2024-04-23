@@ -125,7 +125,6 @@ get_header();?>
     </div>
 </section>
 
-<?php get_template_part( 'templates-parts/separator/tiny-separator' );?>
 <?php get_template_part( 'templates-parts/section-aubel' );?>   
 <?php get_template_part( 'templates-parts/section-citation' );?>
 <?php get_template_part( 'templates-parts/section-two-columns-tit' );?>
