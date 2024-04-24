@@ -157,38 +157,7 @@
     height: 500px;
   }
 
-  #experience-unique {
-    position: relative;
-    background: $secondary-color;
-    margin-top: 200px;
-    padding: 100px 0;
-
-    .img-g {
-      position: absolute;
-      left: 0;
-      top: -100px;
-      width: calc(50vw - 50px);
-      height: 1000px;
-    }
-
-    .container {
-      .col-d {
-        padding-top: 200px;
-
-        h2 {
-          margin-bottom: 30px;
-        }
-        p {
-          color: $light;
-        }
-
-        .img-du {
-          margin-top: 50px;
-          height: 700px;
-        }
-      }
-    }
-  }
+  
 
   #banner-fullwidth {
     background: none;

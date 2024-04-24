@@ -888,27 +888,49 @@
 /* Page Contact */
 .page-template-contact {
   #experience-unique {
+
+    position: relative;
+    background: $secondary-color;
+    margin-top: 200px;
+    padding: 100px 0;
     padding: 0;
     display: flex;
     gap: 30px;
+    height: 1300px;
+    margin-bottom: 100px;
 
-    .img-g {
-      margin-top: -100px;
-      position: relative !important;
-      width: 25vw;
-    }
 
-    .container {
-      width: calc(70vw - 30px);
+    .columns {
+
+      .col-g{
+
+        .img-g {
+      
+          position: absolute;
+          left: 0;
+          top: -100px;
+          width: calc(50vw - 50px);
+          height: 1000px;
+        }
+      }
+
       .col-d {
-        width: 95%;
-        padding-top: 50px;
+        padding-top: 200px;
+        position: relative;
 
         .img-du {
-          height: 300px;
-          margin-bottom: 50px;
-          width: 90vw;
-          margin-left: -30vw;
+          margin-top: 50px;
+          height: 700px;
+          position: absolute;
+          bottom: -100px;
+        }
+
+        h2 {
+          margin-bottom: 30px;
+        }
+        p {
+          color: $light;
+          padding-right: 10vw;
         }
       }
     }

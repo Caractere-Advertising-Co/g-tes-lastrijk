@@ -68,12 +68,17 @@ $imgUd = get_field('image-droite-unique');
 <?php get_template_part( 'templates-parts/section-citation' );?>
 
 <section id="experience-unique">
-    <div class="img-g"><img src="<?php echo $imgU['url'];?>" alt="<?php echo $imgU['title'];?>"/></div>
-    <div class="container columns">
-        <div class="col-g"></div>
+    <div class="columns">
+        <div class="col-g">
+            <div class="img-g from-left">
+                <img src="<?php echo $imgU['url'];?>" alt="<?php echo $imgU['title'];?>"/>
+            </div>
+        </div>
         <div class="col-d">
-            <?php echo $contentUniq;?>
-            <div class="img-du"><img src="<?php echo $imgUd['url'];?>" alt="<?php echo $imgUd['title'];?>" /></div>
+            <span class="from-right"><?php echo $contentUniq;?></span>
+            <div class="img-du from-bottom">
+                <img src="<?php echo $imgUd['url'];?>" alt="<?php echo $imgUd['title'];?>" />
+            </div>
         </div>
     </div>
 </section>

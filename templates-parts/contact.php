@@ -5,7 +5,6 @@
             $title = get_field('titre-contact','options');
             $texte = get_field('texte-contact','options');
             $form = get_field('shortcode_form','options');
-
         ?>
         <?php if($subtitle):?><p class="subtitle"><?php echo $subtitle;?></p><?php endif;?>
         <?php if($title):?> <h2><?php echo $title;?></h2><?php endif;?>
