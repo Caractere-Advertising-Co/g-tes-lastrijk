@@ -134,6 +134,10 @@
         .block-img {
           height: 50px;
           width: 50px;
+
+          img{
+            object-fit: contain;
+          }
         }
 
         .txt-icons {
