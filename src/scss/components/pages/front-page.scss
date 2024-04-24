@@ -137,6 +137,8 @@
           .content p,
           .content h2{
             opacity: 1;
+            -webkit-animation: fade-in-bottom 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            animation: fade-in-bottom 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
           }
         }
 
@@ -145,12 +147,11 @@
           width: 100%;
           left: 20px;
           bottom: 20px;
-          
-          transition: all ease 300ms;
 
           h2 {
             color: $light;
             opacity: 0;
+            transition: all ease 300ms;
           }
 
           p {
@@ -161,6 +162,7 @@
             font-size: 0.9rem;
             margin-bottom: 0;
             opacity: 0;
+            transition: all ease 300ms;
           }
         }
       }
