@@ -144,7 +144,8 @@ get_header();?>
         ?>
     </div>
 </section>
-<?php get_template_part( 'templates-parts/separator/tiny-separator' );?>
+
+<span class="nomobile"><?php get_template_part( 'templates-parts/separator/tiny-separator' );?></span>
 
 <section id="liste-actualites">
     <div class="container">
