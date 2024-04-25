@@ -23,13 +23,15 @@
         max-height: 800px;
       }
       p {
-        &::before {
-          content: "";
-          height: 20px;
-          width: 2px;
-          background-color: $primary-color;
-          display: block;
-          margin-bottom: 50px;
+        &:first-child{
+          &::before {
+            content: "";
+            height: 20px;
+            width: 2px;
+            background-color: $primary-color;
+            display: block;
+            margin-bottom: 50px;
+          }
         }
       }
 
