@@ -73,8 +73,8 @@ endif;?>
 
         <div class="container mobile">
             <div class="links">
-                <a href="">Cookies</a>
-                <a href="">Confidentialité</a>
+                <a href="https://lastrijk.caractere-advertising.be/politique-de-cookies-ue/">Cookies</a>
+                <a href="https://lastrijk.caractere-advertising.be/confidentialites/">Confidentialité</a>
             </div>
 
             <div class="copyright">
