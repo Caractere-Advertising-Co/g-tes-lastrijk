@@ -42,7 +42,7 @@ $txtIntro = get_field('introduction');
     </div>
 </section>
 
-<section id="liste-actualites" style="padding-bottom:150px;">
+<section id="liste-actualites" style="padding-bottom:0px;">
     <div class="container" >
         <?php if(have_rows('services')):
             $i = 0;
