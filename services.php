@@ -47,7 +47,7 @@ $txtIntro = get_field('introduction');
         <?php if(have_rows('services')):
             $i = 0;
             while(have_rows('services')): the_row();
-                get_template_part('templates-parts/blog/card-blog', null, array( 'id' => $i));
+                get_template_part('templates-parts/blog/card-service', null, array( 'id' => $i));
                 $i++;
             endwhile;
         endif; ?>

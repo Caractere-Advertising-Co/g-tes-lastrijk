@@ -2,9 +2,12 @@
 
 const swiperHero = new Swiper(".swiper-hero", {
   loop: true,
-  autoplay: true,
+  autoplay: {
+    delay: 5000,
+  },
   cssMode: true,
   clickable: true,
+  speed: 300,
 
   pagination: {
     el: ".swiper-pagination",
