@@ -29,7 +29,7 @@ $ctaTr = get_field('cta-transition');
     <div class="container">
         <div class="content">
             <span class="subtitle"><?php if($surtitre): echo $surtitre;endif;?></span>
-            <?php if($titre): the_title(); endif;?>
+            <?php the_title();?>
         </div>
     </div>
 </header>

@@ -17,6 +17,14 @@
   }
 }
 
+#cmplz-document{
+  max-width: 1400px !important;
+
+  a{
+    color:$primary-color !important;
+  }
+}
+
 body {
   min-height: 100dvh;
   background: $light;
