@@ -11,6 +11,10 @@
 
 .grecaptcha-badge{
   right: -240px!important;
+
+  &:hover{
+    right: 0!important;
+  }
 }
 
 body {
