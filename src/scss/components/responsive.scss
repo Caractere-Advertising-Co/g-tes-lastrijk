@@ -209,7 +209,7 @@
   }
 
   .booking {
-    bottom: 250px;
+    bottom: 240px;
     width: 90vw;
     left: 5vw;
 
@@ -243,7 +243,7 @@
   }
 
   #hero-container {
-    height: 90vh !important;
+    height: 95vh !important;
 
     .swiper {
       .swiper-wrapper {
@@ -268,8 +268,8 @@
             h1 {
               font-size: 2.5rem;
               line-height: 2.5rem;
-              margin-top: 40px;
-              margin-bottom: 100px;
+              margin-top: 20px;
+              margin-bottom: 70px;
             }
           }
         }
@@ -295,73 +295,88 @@
       display: none;
     }
 
-    .container {
-      .swiper {
-        .card {
-          position: relative;
-          height: 400px;
-          background-size: cover !important;
+    // .container {
+    //   .swiper {
+    //     .card {
+    //       position: relative;
+    //       height: 400px;
+    //       background-size: cover !important;
 
-          &::before {
-            content: "";
-            background-color: $secondary-color;
-            opacity: 0;
-            z-index: 0;
-            position: relative;
-            height: 100%;
-            width: 100%;
-            display: block;
-            transition: all ease-in 200ms;
-          }
+    //       &::before {
+    //         content: "";
+    //         background-color: $secondary-color;
+    //         opacity: 0;
+    //         z-index: 0;
+    //         position: relative;
+    //         height: 100%;
+    //         width: 100%;
+    //         display: block;
+    //         transition: all ease-in 200ms;
+    //       }
 
-          &:hover {
-            &::before {
-              opacity: 0.7;
-            }
+    //       &:hover {
+    //         &::before {
+    //           opacity: 0.7;
+    //         }
 
-            &::after {
-              content: "+";
-              color: #fff;
-              position: absolute;
-              top: calc((100% - 60px) / 2);
-              left: calc((100% - 60px) / 2);
-              margin: auto;
-              font-size: 4rem;
-              background: #ffffff29;
-              width: 60px;
-              height: 60px;
-              line-height: 3.3rem;
-              text-align: center;
-              border-radius: 40px;
-              margin: 0;
-            }
+    //         &::after {
+    //           content: "+";
+    //           color: #fff;
+    //           position: absolute;
+    //           top: calc((100% - 60px) / 2);
+    //           left: calc((100% - 60px) / 2);
+    //           margin: auto;
+    //           font-size: 4rem;
+    //           background: #ffffff29;
+    //           width: 60px;
+    //           height: 60px;
+    //           line-height: 3.3rem;
+    //           text-align: center;
+    //           border-radius: 40px;
+    //           margin: 0;
+    //         }
 
-            .content {
-              opacity: 1;
-            }
-          }
+    //         .content {
+    //           opacity: 1;
+    //         }
+    //       }
 
-          .content {
-            position: absolute;
-            width: 100%;
-            left: 20px;
-            bottom: 20px;
-            opacity: 0;
-            transition: all ease 300ms;
+    //       .content {
+    //         position: absolute;
+    //         width: 100%;
+    //         left: 20px;
+    //         bottom: 20px;
+    //         opacity: 0;
+    //         transition: all ease 300ms;
 
-            h2 {
-              color: $light;
-            }
+    //         h2 {
+    //           color: $light;
+    //         }
 
-            p {
-              color: $primary-color;
-              letter-spacing: 10px;
-              text-transform: uppercase;
-              font-weight: 400;
-              font-size: 0.9rem;
-              margin-bottom: 0;
-            }
-          }
+    //         p {
+    //           color: $primary-color;
+    //           letter-spacing: 10px;
+    //           text-transform: uppercase;
+    //           font-weight: 400;
+    //           font-size: 0.9rem;
+    //           margin-bottom: 0;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
+    .container{
+      gap: 10px;
+
+      a{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 0;
+        
+        .card{
+          height: 200px;
+          margin-bottom: 0;
         }
       }
     }
@@ -446,32 +461,39 @@
     }
   }
 
+  #liste-actualites{
+    padding-bottom: 250px;
+  }
+
   #liste-actualites,
   #simple-page {
     .container {
+      margin-top: 50px;
       flex-direction: row;
       .card-news.-left {
         .col-g {
-          padding: 20px 40px;
+          margin-top: 180px;
+          padding: 20px 30px;
           width: 70%;
         }
         .col-d {
-          width: 70%;
-          margin-left: -50%;
+          width: 100%;
+          margin-left: -80%;
           overflow: hidden;
-          max-height: 400px;
+          max-height: 300px;
         }
       }
 
       .card-news.-right {
         .col-g {
-          width: 70%;
-          margin-right: -50%;
+          width: 100%;
+          margin-right: -80%;
           overflow: hidden;
-          max-height: 400px;
+          max-height: 300px;
         }
         .col-d {
-          padding: 20px 40px;
+          margin-top: 180px;
+          padding: 20px 30px;
           width: 70%;
         }
       }
@@ -486,10 +508,36 @@
         }
       }
     }
+
+    .cta-actus{
+      margin: 0 auto 100px;
+      background-color: $primary-color;
+      color: #fff;
+    }
   }
 
   .gites-template #nos-chambres .container .swiper-chambre-button-next {
     display: none;
+  }
+
+  #galerie-front{
+    .columns{
+      .col-g{
+        height: 600px;
+        margin-top: -300px;
+      }
+
+      .col-d{
+        height: 400px;
+        margin-top: 200px;
+      }
+    }
+
+    .anim-img-3{
+      margin-top: 200px;
+      height: 250px;
+      transform: translate(0px, -200px)!important;
+    }
   }
 
   .page-template-services #liste-actualites {

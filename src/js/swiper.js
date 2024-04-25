@@ -24,13 +24,13 @@ const swiperFrontPage = new Swiper(".swiper-resp", {
   },
 });
 
-const swiperCard = new Swiper(".swiper-card", {
-  cssMode: true,
-  slidesPerView: 1.2,
-  loop: true,
-  spaceBetween: 50,
-  autoplay: false,
-});
+// const swiperCard = new Swiper(".swiper-card", {
+//   cssMode: true,
+//   slidesPerView: 2,
+//   loop: true,
+//   spaceBetween: 20,
+//   autoplay: false,
+// });
 
 /* Commun */
 

@@ -78,7 +78,7 @@ get_header();?>
 
 <?php if(!$_POST): ?>
 <section id="card-gites">
-    <div class="container columns nomobile">
+    <div class="container columns">
         <?php 
             if(have_rows('services')):
                 while(have_rows('services')): the_row();
@@ -100,7 +100,7 @@ get_header();?>
             endif;?>
     </div>
 
-    <div class="container nodesktop">
+    <!--<div class="container nodesktop">
         <div class="swiper swiper-card">
             <div class="swiper-wrapper">
                 <?php 
@@ -122,7 +122,7 @@ get_header();?>
                 endif;?>
             </div>
         </div>
-    </div>
+    </div>-->
 </section>
 
 <?php get_template_part( 'templates-parts/section-aubel' );?>   

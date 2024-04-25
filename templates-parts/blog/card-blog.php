@@ -20,10 +20,10 @@ endif;?>
     <div class="card-news -left container columns">
         <div class="col-g">
             <?php if($titre): echo $titre;endif;?>
-            <?php if($intro): echo $intro;endif;?>
+            <?php if($intro): echo substr($intro, 0 , 200) . '...';endif;?>
 
             <?php if(!is_page_template( 'services.php' )):?>
-                <a href="<?php echo the_permalink( );?>" class="cta-border"><?php the_title();?></a>
+                <a href="<?php echo the_permalink( );?>" class="cta-border">Découvrir</a>
             <?php endif;?>
         </div>
 
@@ -46,10 +46,10 @@ endif;?>
         </div>
         <div class="col-d">
             <?php if($titre): echo $titre;endif;?>
-            <?php if($intro): echo $intro;endif;?>
+            <?php if($intro): echo substr($intro, 0 , 200) . '...';endif;?>
             
             <?php if(!is_page_template( 'services.php' )):?>
-                <a href="<?php echo the_permalink( );?>" class="cta-border"><?php the_title();?></a>
+                <a href="<?php echo the_permalink( );?>" class="cta-border">Découvrir</a>
             <?php endif;?>
         </div>
     </div>  
