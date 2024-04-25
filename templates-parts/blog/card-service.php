@@ -46,7 +46,7 @@ endif;?>
         </div>
         <div class="col-d">
             <?php if($titre): echo $titre;endif;?>
-            <?php if($intro): echo  echo $intro;endif;?>
+            <?php if($intro): echo  $intro;endif;?>
             
             <?php if(!is_page_template( 'services.php' )):?>
                 <a href="<?php echo the_permalink( );?>" class="cta-border">Découvrir</a>
