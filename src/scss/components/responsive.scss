@@ -562,6 +562,21 @@
     border-bottom: 1px solid $light-gray;
   }
 
+  .page-template-a-propos{
+    #section-2-tit{
+      .columns{
+        .col-d{
+          .img-right{
+            margin-bottom: 50px;
+            width: 90%;
+            margin-left: -10%;
+            height: 600px;
+          }
+        }
+      }
+    }
+  }
+
   #banner-fullwidth {
     .container {
       .subtitle {
