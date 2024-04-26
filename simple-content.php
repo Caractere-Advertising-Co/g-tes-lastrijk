@@ -5,9 +5,6 @@ Template Name: Simple-content
 
 get_header();
 
-$surtitre = get_field('surtitre');
-$titre = get_field('titre');
-
 $bg_header = get_field('bg_header');
 
 if(!$bg_header):
@@ -16,10 +13,6 @@ else :
     $bg_header = get_field('bg_header');
     $bg_url = $bg_header['url'];
 endif;
-
-$imgTr = get_field('image-transition');
-$contentTr = get_field('content-transition');
-$ctaTr = get_field('cta-transition');
 
 ?>
 

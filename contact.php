@@ -49,7 +49,7 @@ $imgUd = get_field('image-droite-unique');
                         <span class="block-img"><img src="<?php echo $icone['url'];?>" alt="<?php echo $icone['title'];?>"/></span>
                         <div class="txt-icons">
                             <p class="subtitle"><?php echo $libelle;?></p>
-                            <a href="<?php echo $lien['url'];?>"><?php echo $lien['title'];?></a>
+                            <?php if($lien):?><a href="<?php echo $lien['url'];?>"><?php echo $lien['title'];?></a><?php endif;?>
                         </div>
                     </div>
                 <?php endif;
