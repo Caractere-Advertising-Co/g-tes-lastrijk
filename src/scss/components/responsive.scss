@@ -520,8 +520,17 @@
       }
 
       .content-toggle {
+        
         .accordion {
           width: calc(100% - 30px) !important;
+
+          h2{
+            font-size: 1.8rem;
+          }
+
+          &::after{
+            font-size: 2rem;
+          }
         }
       }
     }
@@ -972,37 +981,37 @@
     position: relative;
     background: $secondary-color;
     margin-top: 200px;
-    padding: 100px 0;
     padding: 0;
-    display: flex;
-    gap: 30px;
     height: 1300px;
     margin-bottom: 100px;
 
 
     .columns {
+      flex-direction: column; 
+      width: 90vw;
+      margin: auto;
 
       .col-g{
+        width: 25%;
+        margin-left: -10%;
 
         .img-g {
       
           position: absolute;
           left: 0;
           top: -100px;
-          width: calc(50vw - 50px);
-          height: 1000px;
+          width: 30vw;
+          height: 900px;
         }
       }
 
       .col-d {
-        padding-top: 200px;
         position: relative;
+        width: 75%;
+        padding-left: 35%;
 
         .img-du {
-          margin-top: 50px;
-          height: 700px;
-          position: absolute;
-          bottom: -100px;
+          display: none;
         }
 
         h2 {
