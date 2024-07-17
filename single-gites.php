@@ -107,7 +107,7 @@ endif;?>
             ?>
         </div>
 
-        <?php echo '<a href="'.$ctaChambres['url'].'" class="cta">'.$ctaChambres['title'].'</a>';?>
+        <?php if($ctaChambres): echo '<a href="'.$ctaChambres['url'].'" class="cta">'.$ctaChambres['title'].'</a>';endif;?>
     </div>
 </section>
 
