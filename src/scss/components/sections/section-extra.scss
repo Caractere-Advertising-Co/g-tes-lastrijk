@@ -40,20 +40,23 @@
         .swiper-wrapper {
           .swiper-slide {
             background-color: $light;
-            min-height: 520px;
+            min-height: 540px;
 
             .content-img {
               height: 200px;
             }
 
             .content {
-              padding: 20px 30px;
-              width: calc(100% - 60px);
+              padding: 15px 20px;
+              width: calc(100% - 40px);
 
               h3 {
                 font-size: 1.5rem;
                 color: $primary-color;
                 margin-bottom: 20px;
+                line-height: 2rem;
+                display: block;
+                min-height: 65px;
               }
 
               p,
