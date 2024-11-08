@@ -199,7 +199,7 @@ get_header();?>
     <?php if($galerie):?>
         <img src="<?php echo $galerie[2]['url'];?>" alt="<?php echo $galerie[2]['title'];?>" class="from-bottom "/>
     <?php endif;?>
-    <?php if($ctaGalerie):?><a href="<?php echo $ctaGalerie['url'];?>" class="cta-border"><?php echo $ctaGalerie['name'];?></a><?php endif;?>
+    <?php if($ctaGalerie):?><a href="<?php echo $ctaGalerie['url'];?>" class="cta-border"><?php echo $ctaGalerie['title'];?></a><?php endif;?>
     </div>
 </section>
 
