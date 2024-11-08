@@ -178,7 +178,7 @@ get_header();?>
 <section id="galerie-front" class="galeries-home">
     <?php 
         $galerie = get_field('galerie-gle-separator');
-        $cta = get_field('cta-gle-separator');
+        $ctaGalerie = get_field('cta-gle-separator');
     
     ?>
     <div class="columns">
@@ -197,9 +197,9 @@ get_header();?>
 
     <div class="container anim-img-3">
     <?php if($galerie):?>
-                <img src="<?php echo $galerie[2]['url'];?>" alt="<?php echo $galerie[2]['title'];?>" class="from-bottom "/>
-            <?php endif;?>
-        <a href="" class="cta-border">En images</a>
+        <img src="<?php echo $galerie[2]['url'];?>" alt="<?php echo $galerie[2]['title'];?>" class="from-bottom "/>
+    <?php endif;?>
+    <?php if($ctaGalerie):?><a href="<?php echo $ctaGalerie['url'];?>" class="cta-border"><?php echo $ctaGalerie['name'];?></a><?php endif;?>
     </div>
 </section>
 
