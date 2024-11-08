@@ -44,7 +44,7 @@ endif;
     </div>
 
     <div class="container">
-        <a href="#!" class="cta-border more">Charger plus</a>
+        <a href="#!" class="cta-border more">Plus de photos</a>
     </div>
 </div>
 
