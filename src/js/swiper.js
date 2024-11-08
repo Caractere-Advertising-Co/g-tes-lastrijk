@@ -2,9 +2,10 @@
 
 const swiperHero = new Swiper(".swiper-hero", {
   loop: true,
-  autoplay: {
-    delay: 8000,
-  },
+  // autoplay: {
+  //   delay: 8000,
+  // },
+  autoplay: false,
   cssMode: true,
   clickable: true,
   speed: 600,
