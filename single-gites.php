@@ -106,19 +106,22 @@ endif;?>
 
         <div class="content-toggle">
             <?php if(have_rows('informations_gites')):
-                $i= 0; while(have_rows('informations_gites')): the_row();
-                    $title = get_sub_field('titre');
-                    $content = get_sub_field('explication');
+                    $i= 0; 
                     
-                    ?>
-                    <div class="title-toggle accordion <?php echo $i == 0 ? 'active' : '';?>">
-                        <h2><?php echo $title;?></h2>
-                    </div>
+                    while(have_rows('informations_gites')): the_row();
+                        $title = get_sub_field('titre');
+                        $content = get_sub_field('explication');
+                        
+                        ?>
+                        <div class="title-toggle accordion <?php echo $i == 0 ? 'active' : '';?>">
+                            <h2><?php echo $title;?></h2>
+                        </div>
 
-                    <div class="content-toggle panel <?php echo $title == 'Aménagement' ? 'amenagements' : '';?>">
-                        <?php echo $content;?>
-                    </div>
-                    <?php endwhile; $i++;
+                        <div class="content-toggle panel <?php echo $title == 'Aménagement' ? 'amenagements' : '';?>" <?php echo $i == 0 ? 'style="height: 100%;"' : '';?>>
+                            <?php echo $content;?>
+                        </div>
+                    <?php $i++;
+                    endwhile; 
                 endif;
             ?>
         </div>
