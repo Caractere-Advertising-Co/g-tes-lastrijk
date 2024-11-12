@@ -67,7 +67,7 @@ const swiperExtra = new Swiper(".swiper-extra", {
 /* Page Gites */
 
 const swiperGite = new Swiper(".swiper-galerie", {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 30,
   autoplay: true,
   breakpoints: {
@@ -78,7 +78,7 @@ const swiperGite = new Swiper(".swiper-galerie", {
     },
     // when window width is >= 640px
     640: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 30,
     },
   },
