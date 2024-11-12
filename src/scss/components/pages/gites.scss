@@ -204,6 +204,17 @@
       h2 {
         text-align: center;
       }
+
+      p{
+        a{
+          color: $primary-color;
+          font-weight: 500;
+        }
+      }
+
+      h2{
+        margin-bottom: 30px;
+      }
     }
 
     .amenagements {
