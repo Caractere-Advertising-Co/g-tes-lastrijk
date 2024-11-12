@@ -66,6 +66,23 @@ const swiperExtra = new Swiper(".swiper-extra", {
 
 /* Page Gites */
 
+const swiperGite = new Swiper(".swiper-galerie", {
+  slidesPerView: 5,
+  spaceBetween: 0,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+})
+
 const swiperRooms = new Swiper(".swiper-chambres", {
   slidesPerView: 3,
   spaceBetween: 50,
