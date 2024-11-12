@@ -16,6 +16,8 @@ $intro = get_field('introduction');
 
 $cta = get_field('cta');
 
+$galerie = get_field('galerie-gite');
+
 /* Nos Chambres */
 
 $surtitre_chamres = get_field('surtitre-chambres');
@@ -86,6 +88,20 @@ endif;?>
             <?php if($titrintro) : echo $titrintro;endif;?>
             
             <div class="intro from-bottom"><?php if($intro) : echo $intro;endif;?></div>
+
+            <?php if($galerie):?>
+                <div class="swiper swiper-galerie">
+                    <div class="swiper-wrapper">
+                        <?php foreach($galerie as $g):?>
+                            <div class="swiper-slide">
+                                <a fs-lighbox href="<?php echo $g['url'];?>">
+                                    <img src="<?php echo $g['url'];?>" alt="<?php echo $g['title'];?>"/>
+                                </a>
+                            </div>
+                        <?php endforeach;?>
+                    </div>
+                </div>
+            <?php endif;?>
         </div>
 
         <div class="content-toggle">
