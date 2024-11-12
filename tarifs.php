@@ -21,6 +21,13 @@ $imgTr = get_field('image-transition');
 $contentTr = get_field('content-transition');
 $ctaTr = get_field('cta-transition');
 
+$surtitreCT = get_field('surtitre-section-tit');
+$content = get_field('content-tit');
+$img = get_field('img-tit');
+$secText = get_field('sectexte-tit');
+$cta = get_field('cta-tit');
+?>
+
 ?>
 
 <header id="header-simple-page" >
@@ -36,7 +43,7 @@ $ctaTr = get_field('cta-transition');
 
 <section id="section-2-tit" class="tarifs-custom">
     <div class="container">
-        <?php if($surtitre): echo '<h3 class="subtitle from-bottom">'.$surtitre.'</h3>';endif;?>
+        <?php if($surtitreCT): echo '<h3 class="subtitle from-bottom">'.$surtitreCT.'</h3>';endif;?>
         <?php if($content): echo '<span class="from-bottom">'.$content.'</span>';endif;?>
         <?php if($cta): echo '<a href="'.$cta['url'].'" class="cta from-bottom nomobile">'.$cta['title'].'</a>';endif;?>
     </div>
