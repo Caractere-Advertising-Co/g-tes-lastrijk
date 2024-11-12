@@ -6,7 +6,8 @@ Template Name: Tarifs
 get_header();
 
 $surtitre = get_field('surtitre');
-$titre = get_field('titre');
+$titre = get_field('titre_page');
+$intro = get_field('introduction');
 
 $bg_header = get_field('bg_header');
 
@@ -20,13 +21,6 @@ endif;
 $imgTr = get_field('image-transition');
 $contentTr = get_field('content-transition');
 $ctaTr = get_field('cta-transition');
-
-$surtitreCT = get_field('surtitre-section-tit');
-$content = get_field('content-tit');
-$img = get_field('img-tit');
-$secText = get_field('sectexte-tit');
-$cta = get_field('cta-tit');
-?>
 
 ?>
 
