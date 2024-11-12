@@ -50,6 +50,5 @@ $cta = get_field('cta');
     </div>
 </section>
 
-<?php get_template_part( 'templates-parts/section-introduction' );?>  
 
 <?php get_footer();
