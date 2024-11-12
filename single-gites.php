@@ -117,7 +117,7 @@ endif;?>
                             <h2><?php echo $title;?></h2>
                         </div>
 
-                        <div class="content-toggle panel <?php echo $title == 'Aménagement' ? 'amenagements' : '';?>" <?php echo $i == 0 ? 'style="height: 100%;"' : '';?>>
+                        <div class="content-toggle panel <?php echo $title == 'Aménagement' ? 'amenagements' : '';?>" <?php echo $i == 0 ? 'style="max-height: 600px;"' : '';?>>
                             <?php echo $content;?>
                         </div>
                     <?php $i++;
