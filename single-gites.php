@@ -50,7 +50,7 @@ endif;?>
 
         <div class="columns">
             <a href="#tarifs" class="cta-border" id="toTarifs">Tarifs</a>
-            <?php if($lien): echo '<a href="'.$lien['url'].'" class="cta">'.$lien['name'].'</a>';endif;?>
+            <?php if($lien): echo '<a href="'.$lien['url'].'" class="cta">'.$lien['title'].'</a>';endif;?>
         </div>
     </div>
 
@@ -118,7 +118,7 @@ endif;?>
                     $content = get_sub_field('explication');
                         
                     ?>
-                    <div class="title-toggle accordion <?php echo $i == 0 ? 'active' : '';?>"<?php echo $i == 3 ? 'id="tarifs"' : '';?>>
+                    <div class="title-toggle accordion <?php echo $i == 0 ? 'active' : '';?>"<?php echo $i == 2 ? 'id="tarifs"' : '';?>>
                         <h2><?php echo $title;?></h2>
                     </div>
 
