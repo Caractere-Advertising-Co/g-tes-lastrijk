@@ -88,6 +88,7 @@ const swiperRooms = new Swiper(".swiper-chambres", {
   slidesPerView: 3,
   spaceBetween: 50,
   loop: true,
+  autoplay: true,
 
   navigation: {
     nextEl: ".swiper-chambre-button-next",
