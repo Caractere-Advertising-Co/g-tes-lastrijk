@@ -69,6 +69,7 @@ const swiperExtra = new Swiper(".swiper-extra", {
 const swiperGite = new Swiper(".swiper-galerie", {
   slidesPerView: 4,
   spaceBetween: 30,
+  autoplay: true,
   breakpoints: {
     // when window width is >= 320px
     320: {

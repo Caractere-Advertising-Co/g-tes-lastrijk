@@ -94,7 +94,7 @@ endif;?>
                     <div class="swiper-wrapper">
                         <?php foreach($galerie as $g):?>
                             <div class="swiper-slide">
-                                <a fs-lighbox href="<?php echo $g['url'];?>">
+                                <a data-fslightbox href="<?php echo $g['url'];?>">
                                     <img src="<?php echo $g['url'];?>" alt="<?php echo $g['title'];?>"/>
                                 </a>
                             </div>
