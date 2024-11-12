@@ -65,7 +65,7 @@
         }
       }
     }
-    
+
     tbody{
       tr{
         td{
@@ -82,15 +82,16 @@
   }
 
   .lapasserelle{
-    margin-top: 50px;
-    padding-top: 100px;
+    margin-top: 100px;
     
     &::before{
       content: '';
-      width: 50%;
-      height: 1px;
+      width: 40%;
+      height: 3px;
       background-color: $primary-color;
       display: block;
+      margin: auto;
+      margin-bottom: 100px;
     }
   }
 }
