@@ -41,3 +41,42 @@
     }
   }
 }
+
+.tarifs-custom{
+  h3{
+    letter-spacing: 0;
+  }
+
+  table{
+    width: 100%;
+    border-bottom: 1px solid $primary-color;
+    margin-bottom: 30px;
+
+    thead{
+      background-color: $primary-color;
+
+      th{
+        padding: 5px 15px;
+        p{
+          font-weight: 500;
+          color: $light;
+          margin: 0;
+        }
+      }
+    }
+    tbody{
+      tr{
+        td{
+          p{
+            margin:0;
+
+            em{
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}
