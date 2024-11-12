@@ -9,6 +9,7 @@ get_header();
 $surtitre = get_field('surtitre');
 $titre = get_field('titre');
 $price = get_field('price');
+$lien = get_field('lien');
 
 $subtitle = get_field('surtitre-intro');
 $titrintro = get_field('titre-intro');
@@ -46,10 +47,14 @@ endif;?>
     <div class="container">
         <?php if($surtitre): echo '<span class="subtitle">'.$surtitre.'</span>'; endif;?>
         <?php if($titre): echo $titre; endif;?>
-        <?php if($price): echo '<span class="cta">ÀPD DE '.$price.'€ LA NUIT';endif;?>
+
+        <div class="columns">
+            <a href="#tarifs" class="cta-border" id="toTarifs">Tarifs</a>
+            <?php if($lien): echo '<a href="'.$lien['url'].'" class="cta">'.$lien['name'].'</a>';endif;?>
+        </div>
     </div>
 
-    <div class="booking">
+    <!--<div class="booking">
         <form class="research-bar" action="<?php echo get_bloginfo('url').'/booking';?>" method="POST">
             <div class="research-bar__item">
                 <select class="research-bar__item--input gites" name="gites">
@@ -70,7 +75,7 @@ endif;?>
                 <input type="submit" id="rechercher" value="Rechercher" />
             </div>
         </form>
-    </div>
+    </div>-->
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -113,7 +118,7 @@ endif;?>
                     $content = get_sub_field('explication');
                         
                     ?>
-                    <div class="title-toggle accordion <?php echo $i == 0 ? 'active' : '';?>">
+                    <div class="title-toggle accordion <?php echo $i == 0 ? 'active' : '';?>"<?php echo $i == 3 ? 'id="tarifs"' : '';?>>
                         <h2><?php echo $title;?></h2>
                     </div>
 
