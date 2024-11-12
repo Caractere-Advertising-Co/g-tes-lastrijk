@@ -32,6 +32,7 @@
 
       a, .cta, .cta-border{
         margin: 0;
+        font-size: .7rem;
       }
 
       .cta-border{
@@ -488,6 +489,18 @@
         background: none;
         color: $primary-color;
         border: 1px solid $primary-color;
+      }
+    }
+  }
+
+  #content-tarifs{
+    table{
+      tr{
+        td{
+          p{
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }

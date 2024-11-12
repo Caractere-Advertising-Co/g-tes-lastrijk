@@ -122,7 +122,7 @@ endif;?>
                         <h2><?php echo $title;?></h2>
                     </div>
 
-                    <div class="content-toggle panel <?php echo $title == 'Aménagement' ? 'amenagements' : '';?>" <?php echo $i == 0 ? 'style="max-height: 600px;"' : '';?>>
+                    <div class="content-toggle panel <?php echo $title == 'Aménagement' ? 'amenagements' : '';?>" <?php echo $i == 0 ? 'style="max-height: 600px;"' : '';?><?php echo $i == 2 ? 'id="content-tarifs"' : '';?>>
                         <?php echo $content;?>
                     </div>
                 <?php $i++;
