@@ -111,7 +111,7 @@ endif;?>
                     $content = get_sub_field('explication');
                     
                     ?>
-                    <div class="title-toggle accordion <?php echo $i = 0 ? 'active' : '';?>">
+                    <div class="title-toggle accordion <?php echo $i == 0 ? 'active' : '';?>">
                         <h2><?php echo $title;?></h2>
                     </div>
 
