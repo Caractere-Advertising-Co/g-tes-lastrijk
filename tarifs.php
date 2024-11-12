@@ -38,7 +38,6 @@ $ctaTr = get_field('cta-transition');
 <section id="section-2-tit" class="tarifs-custom">
     <div class="container">
         <?php if($intro): echo '<span class="from-bottom">'.$intro.'</span>';endif;?>
-        <?php if($cta): echo '<a href="'.$cta['url'].'" class="cta from-bottom nomobile">'.$cta['title'].'</a>';endif;?>
     </div>
 </section>
 
