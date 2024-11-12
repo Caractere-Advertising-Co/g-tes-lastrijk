@@ -40,12 +40,6 @@ $ctaTr = get_field('cta-transition');
         <?php if($intro): echo '<span class="from-bottom">'.$intro.'</span>';endif;?>
         <?php if($cta): echo '<a href="'.$cta['url'].'" class="cta from-bottom nomobile">'.$cta['title'].'</a>';endif;?>
     </div>
-
-    <div class="nodesktop">
-        <div class="container">
-            <?php if($cta): echo '<a href="'.$cta['url'].'" class="cta from-bottom nodesktop">'.$cta['title'].'</a>';endif;?>
-        </div>
-    </div>
 </section>
 
 <section id="transition-blog">
