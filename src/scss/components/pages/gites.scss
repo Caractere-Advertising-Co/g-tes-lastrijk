@@ -6,7 +6,7 @@
     img {
       position: absolute;
       top: 0;
-      filter: brightness(0.75);
+      filter: brightness(0.5);
     }
 
     .container {
@@ -29,6 +29,14 @@
       margin-top: 50px;
       align-items: center;
       justify-content: center;
+
+      a, .cta, .cta-border{
+        margin: 0;
+      }
+
+      .cta-border{
+        background-color: #20202061;
+      }
     }
   }
 
