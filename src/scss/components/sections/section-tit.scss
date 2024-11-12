@@ -45,6 +45,7 @@
 .tarifs-custom{
   h3{
     letter-spacing: 0;
+    margin-bottom: 30px;
   }
 
   table{
@@ -77,6 +78,18 @@
         }
       }
     }
+  }
+
+  .lapasserelle{
+    margin-top: 50px;
+    padding-top: 100px;
     
+    &::before{
+      content: '';
+      width: 50%;
+      height: 1px;
+      background-color: $primary-color;
+      display: block;
+    }
   }
 }
