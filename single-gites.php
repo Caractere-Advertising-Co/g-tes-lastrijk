@@ -49,7 +49,7 @@ endif;?>
         <?php if($titre): echo $titre; endif;?>
 
         <div class="columns">
-            <a href="#tarifs" class="cta-border" id="toTarifs">Tarifs</a>
+            <?php if(get_field('informations_gites')):?><a href="#tarifs" class="cta-border" id="toTarifs">Tarifs</a><?php endif;?>
             <?php if($lien): echo '<a href="'.$lien['url'].'" class="cta">'.$lien['title'].'</a>';endif;?>
         </div>
     </div>
