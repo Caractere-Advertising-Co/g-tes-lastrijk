@@ -8,8 +8,10 @@ get_header();?>
         <div class="swiper-wrapper">
             <?php if(have_rows('slides')):
                 while(have_rows('slides')) : the_row();?>
-                    <?php $bg = get_sub_field('background_image');?>
-                    <?php $cta = get_sub_field('liens');?>
+                    <?php 
+                        $bg    = get_sub_field('background_image');
+                        $links = get_sub_field('grp_links');     
+                    ?>
 
                     <?php if($bg):?>
                         <div class="swiper-slide">
@@ -17,7 +19,14 @@ get_header();?>
                                 <div class="content">
                                     <p class="baseline"><?php echo get_sub_field('sous-titre');?></p>
                                     <?php echo get_sub_field('titre');?>
-                                    <?php if($cta):?><a href="<?php echo $cta['url'];?>" class="cta-border"><?php echo $cta['title'];?></a><?php endif;?>
+
+                                    <?php if($links):?>
+                                        <div class="columns">
+                                            <?php foreach($links as $lks):?>
+                                                <a href="<?php echo $lks['cta']['url'];?>" target="_blank" class="cta"><?php echo $lks['cta']['title'];?></a>
+                                            <?php endforeach;?>
+                                        </div>
+                                    <?php endif;?>
                                 </div>
                         </div>
                     <?php endif;
@@ -28,7 +37,7 @@ get_header();?>
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="booking">
+    <!-- <div class="booking">
         <form class="research-bar" action="<?php echo get_bloginfo('url').'/booking';?>" method="POST">
             <div class="research-bar__item">
                 <select class="research-bar__item--input gites" name="gites">
@@ -61,7 +70,7 @@ get_header();?>
                 $checkout = date("Y-m-d", strtotime($checkout));
             endif;?>
         </div>
-    </div>
+    </div> -->
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">

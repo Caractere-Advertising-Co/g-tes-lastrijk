@@ -52,6 +52,18 @@
             border-color: #fff;
           }
         }
+
+        .columns{
+          margin-top: 80px;
+          justify-content: center;
+          align-items: center;
+
+          .cta{
+            margin: 0;
+            font-size: .8rem;
+            text-align: center;
+          }
+        }
       }
     }
 
