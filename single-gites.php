@@ -76,14 +76,6 @@ endif;?>
             </div>
         </form>
     </div>-->
-
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script>
-    jQuery(document).ready(function($){
-        $("#check-in, #check-out").datepicker({ dateFormat: 'dd/mm/yy' });
-    });
-    </script>
 </header>
 
 <section id="simple-page">
@@ -143,7 +135,7 @@ endif;?>
             $galerie = get_field('galerie-chambres');
 
             if($surtitre): echo '<h3 class="subtitle">'.$surtitre.'</h3>';endif;
-            if($titre): echo $titre;endif;
+            if($titre): echo $titre; endif;
 
             if($galerie):?>
                 <div class="swiper swiper-chambres">
@@ -160,12 +152,9 @@ endif;?>
                     
                 </div>
 
-
                 <div class="swiper-chambre-button-prev"></div>
                 <div class="swiper-chambre-button-next"></div>
-
-            <?php endif;
-        ?>
+            <?php endif;?>
     </div>
 </section>
 

@@ -39,7 +39,6 @@
                 </rect>
             </svg>
         </div>
-
     </div>
 </div>
 

@@ -194,7 +194,7 @@ function content_popup(){
 				  <div class="swiper swiper-reference">
 					<div class="swiper-wrapper">
 					  <?php foreach($post_data['galerie'] as $img) :?>
-						<div class="swiper-slide" style="background:url('<?php echo $img['url'];?>');">
+						<div class="swiper-slide" style="background:url('<?php echo $img['url'];?>');background-size:contain!important;background-position: center center;">
 						</div>
 					  <?php endforeach;?>
 					</div>
