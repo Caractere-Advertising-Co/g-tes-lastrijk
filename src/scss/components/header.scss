@@ -140,11 +140,11 @@
         list-style: none;
         gap: 20px;
 
-        li + li::before {
-          content: "•";
-          color: $light;
-          margin-right: 10px;
-        }
+        // li + li::before {
+        //   content: "•";
+        //   color: $light;
+        //   margin-right: 10px;
+        // }
 
         li {
           text-transform: uppercase;
