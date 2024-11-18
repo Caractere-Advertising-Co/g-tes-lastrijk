@@ -140,10 +140,19 @@
         list-style: none;
         gap: 20px;
 
-        li:last-child::before {
-          content: "|";
-          color: $light;
-          margin-right: 10px;
+        li:last-child{
+          display: flex;
+
+          &::before {
+            content: "|";
+            color: $primary-color;
+            font-weight: 300;
+            margin-right: 10px;
+          }
+
+          a{
+            color:$primary-color;
+          }
         }
 
         li {
