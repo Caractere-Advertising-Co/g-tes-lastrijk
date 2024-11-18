@@ -34,7 +34,7 @@ endif;
         <?php
         if($galerie):
             foreach($galerie as $g):?>
-                    <a data-fslightbox data-width="70vw" href="<?php echo $g['url'];?>">
+                    <a data-fslightbox href="<?php echo $g['url'];?>" data-width="70vw" >
                         <img src="<?php echo $g['url'];?>" alt="<?php echo $g['title'];?>" />
                     </a>
                 <?php 
