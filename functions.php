@@ -7,8 +7,9 @@ add_filter('woocommerce_resize_images', static function() {
 // Menu 
 register_nav_menus( array(
     'megamenu' => 'Mega Menu',
-	  'main' => 'Menu Principal',
-	  'footer' => 'Bas de page',
+	'main' => 'Menu Principal',
+	'footer' => 'Bas de page',
+	'secondary' => 'Menu secondaire'
 ) );
 
 add_theme_support( 'post-thumbnails' );

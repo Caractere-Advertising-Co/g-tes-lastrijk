@@ -12,6 +12,12 @@
         </a>
     </div>
     <div class="col-d">
+        <div class="secondary-navigation">
+                <?php wp_nav_menu(array(
+                    'theme_location' => 'secondary',
+                    'menu_class' => 'semi-bold nav'
+                ));?>
+        </div>
         <div class="primary-navigation">
             <?php wp_nav_menu(array(
                 'theme_location' => 'main',
