@@ -33,8 +33,6 @@ $imgUd = get_field('image-droite-unique');
     </div>
 </header>
 
-<?php get_template_part( 'templates-parts/contact' );?>
-
 <section id="widget-contact">
     <div class="container columns">
         <?php 
@@ -57,6 +55,8 @@ $imgUd = get_field('image-droite-unique');
         endif;?>
     </div>
 </section>
+
+<?php get_template_part( 'templates-parts/contact' );?>
 
 <section class="carte-contact">
     <gmp-map center="50.70943069458008,5.8393425941467285" zoom="14" map-id="DEMO_MAP_ID">
