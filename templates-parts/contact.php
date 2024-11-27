@@ -13,7 +13,7 @@
 
         <?php if($texte): echo $texte;endif;?>
 
-        <?php if(is_page( 627 )):?>
+        <?php if(is_page(627)):?>
             <section id="widget-contact">
                 <div class="container columns">
                     <?php if(have_rows('widget-contact')):
