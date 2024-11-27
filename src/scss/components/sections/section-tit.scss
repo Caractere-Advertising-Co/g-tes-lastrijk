@@ -19,8 +19,9 @@
 
     .col-d {
       .img-right {
-        margin-bottom: 100px;
-        max-height: 800px;
+        margin-bottom: 50px;
+        max-height: 650px;
+        overflow: hidden;
       }
       p {
         &:first-child{

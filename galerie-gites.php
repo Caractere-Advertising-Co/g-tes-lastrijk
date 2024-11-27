@@ -34,13 +34,11 @@ endif;
         <?php
         if($galerie):
             foreach($galerie as $g):?>
-                    <a data-fslightbox href="<?php echo $g['url'];?>">
-                        <img src="<?php echo $g['url'];?>" alt="<?php echo $g['title'];?>" />
-                    </a>
-                <?php 
-            endforeach;
-        endif;
-        ;?>
+                <a data-fslightbox href="<?php echo $g['url'];?>">
+                    <img src="<?php echo $g['url'];?>" alt="<?php echo $g['title'];?>" />
+                </a>
+            <?php endforeach;
+        endif;?>
     </div>
 
     <div class="container">
