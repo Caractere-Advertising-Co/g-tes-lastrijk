@@ -981,14 +981,12 @@
 /* Page Contact */
 .page-template-contact {
   #experience-unique {
-
     position: relative;
     background: $secondary-color;
     margin-top: 200px;
     padding: 0;
-    height: 1300px;
+    min-height: 500px;
     margin-bottom: 100px;
-
 
     .columns {
       flex-direction: column; 
