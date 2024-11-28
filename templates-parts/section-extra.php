@@ -6,7 +6,7 @@
     $surtitre = get_field('surtitre-extras','options');
     $txt = get_field('texte_extras','options');?>
 
-    <section id="section-extra" <?php if($bg_actif): echo 'class=" -filtreGreen" style="background:url('.$imgBg['url'].');"' ;endif;?>>
+    <section id="section-extra" <?php if($bg_actif && $imgBg): echo 'class=" -filtreGreen" style="background:url('.$imgBg['url'].');"' ;endif;?>>
         <div class="container columns" >
             <div class="col-g">
                 <?php if($surtitre): echo '<h3 class="subtitle">'.$surtitre.'</h3>';endif;?>
@@ -36,8 +36,6 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-
-
                 <div class="swiper-button-next"></div>
             </div>
         </div>
