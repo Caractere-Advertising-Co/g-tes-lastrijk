@@ -5,7 +5,6 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Gîte la Strijk - Découvrez un logement de charme à Aubel"/>
-    <title>La Strijk Gîtes</title>
 
     <link rel="stylesheet" href="https://use.typekit.net/ovg4lmv.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
