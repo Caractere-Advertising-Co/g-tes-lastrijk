@@ -11,6 +11,9 @@ $cttCol2 = get_field('contenu_colonne_2','options');
 
 $cttCol3 = get_field('contenu_colonne_3','options');
 
+$cookies = get_field('cookies','options');
+$confidentitalités = get_field('confidentialites','options');
+
 
 if(!is_front_page()):
     get_template_part( 'templates-parts/section-bannerfullwidth' );
@@ -61,21 +64,21 @@ endif;?>
     </div>
     <div class="footer_bottom">
         <div class="container desktop">
-            <a href="">Cookies</a>
+            <?php if($cookies): echo '<a href="'.$cookies['url'].'">'.$cookies['title'].'</a>'; endif;?>
             <div>
                 <?php 
                     $copyright = get_field('copyright','options');
                     if($copyright): echo $copyright; endif;
                 ?>
             </div>
-            <a href="">Confidentialité</a>
+            <?php if($confidentitalités): echo '<a href="'.$confidentitalités['url'].'">'.$confidentitalités['title'].'</a>'; endif;?>
         </div>
 
         <div class="container mobile">
             <div class="links">
-                <a href="https://lastrijk.caractere-advertising.be/politique-de-cookies-ue/">Cookies</a>
-                <a href="https://lastrijk.caractere-advertising.be/confidentialites/">Confidentialité</a>
-            </div>
+                <?php if($cookies): echo '<a href="'.$cookies['url'].'">'.$cookies['title'].'</a>'; endif;?>
+                <?php if($confidentitalités): echo '<a href="'.$confidentitalités['url'].'">'.$confidentitalités['title'].'</a>'; endif;?>
+                </div>
 
             <div class="copyright">
             <?php 
