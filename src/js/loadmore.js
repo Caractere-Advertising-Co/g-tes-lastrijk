@@ -1,9 +1,7 @@
--(
-  // scripts.js (ou tout autre nom que vous avez donné à votre fichier JavaScript)
-  $(document).ready(function () {
-    var offset = 9; // Nombre d'articles déjà affichés
+$(document).ready(function () {
+  var offset = 9; // Nombre d'articles déjà affichés
 
-    $("#load-more-posts").click(function (e) {
+  $("#load-more-posts").click(function (e) {
       e.preventDefault();
 
       $.ajax({
@@ -18,9 +16,9 @@
           offset += 9; // Mettre à jour le décalage pour charger les prochains articles
         },
       });
-    });
+  });
 
-    $("#load-more-refs").click(function (e) {
+  $("#load-more-refs").click(function (e) {
       e.preventDefault();
 
       $.ajax({
@@ -36,11 +34,8 @@
           offset += 9; // Mettre à jour le décalage pour charger les prochains articles
         },
       });
-    });
-  })
-);
+  });
 
-$(document).ready(function () {
   $(".galerie-grid a").slice(0, 9).show();
 
   var items = $(".galerie-grid a").length;
