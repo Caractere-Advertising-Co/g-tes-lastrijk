@@ -16,7 +16,7 @@
 .header {
   background: none;
   position: absolute;
-  top: 70px;
+  top: 100px;
   left: 7.5vw;
   width: 85vw;
   z-index: 10;
@@ -78,13 +78,6 @@
           }
         }
 
-        .cta {
-          &::after {
-            content: "→";
-            height: 30px;
-            color: $dark-dark-gray;
-          }
-        }
 
         .menu-item-has-children {
           &:hover {
@@ -209,21 +202,6 @@
           &:hover {
             color: $primary-color;
           }
-        }
-      }
-
-      .cta {
-        border-radius: 0;
-
-        &::after {
-          content: ">";
-          margin-left: 10px;
-          height: 30px;
-          color: $light;
-        }
-
-        &::before {
-          border-radius: 0 !important;
         }
       }
 

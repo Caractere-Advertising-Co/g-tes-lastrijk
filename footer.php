@@ -10,6 +10,7 @@ $liensCol2 = get_field('liens-gîtes_copier','options');
 $cttCol2 = get_field('contenu_colonne_2','options');
 
 $cttCol3 = get_field('contenu_colonne_3','options');
+$logo = get_field('logo_footer','options');
 
 $cookies = get_field('cookies','options');
 $confidentitalités = get_field('confidentialites','options');
@@ -22,9 +23,7 @@ endif;?>
 <footer>
     <div class="container">
         <div class="footer-top">
-            <div class="col general-infos">
-                <?php $logo = get_field('logo_footer','options');?>
-                
+            <div class="col general-infos">                
                 <?php if($logo):?>
                     <div class="logo-footer">
                         <img src="<?php echo $logo['url'];?>" alt="<?php echo $logo['title'];?>" />
