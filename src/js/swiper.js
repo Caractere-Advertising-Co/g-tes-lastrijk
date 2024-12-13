@@ -2,7 +2,9 @@
 
 const swiperHero = new Swiper(".swiper-hero", {
   loop: true,
-  autoplay: true,
+  autoplay: {
+    delay: 8000,
+  },
   cssMode: true,
   clickable: true,
   speed: 600,
@@ -13,10 +15,11 @@ const swiperHero = new Swiper(".swiper-hero", {
   },
 });
 
-
 const swiperFrontPage = new Swiper(".swiper-resp", {
   cssMode: true,
   loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -24,21 +27,13 @@ const swiperFrontPage = new Swiper(".swiper-resp", {
   },
 });
 
-const swiperGalerie = new Swiper(".swiper-galerie",{
-  cssMode: true,
-  slidesPerView: 3,
-  spaceBetween: 50, 
-  loop: true,
-
-  navigation: {
-    nextEl: ".swiper-galerie-button-next",
-    prevEl: ".swiper-galerie-button-prev",
-  },
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: false ,
-  },
-});
+// const swiperCard = new Swiper(".swiper-card", {
+//   cssMode: true,
+//   slidesPerView: 2,
+//   loop: true,
+//   spaceBetween: 20,
+//   autoplay: false,
+// });
 
 /* Commun */
 
@@ -68,6 +63,50 @@ const swiperExtra = new Swiper(".swiper-extra", {
   },
 });
 
+/* Page Gites */
+
+const swiperGite = new Swiper(".swiper-galerie", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay: true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+})
+
+const swiperRooms = new Swiper(".swiper-chambres", {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  loop: true,
+  autoplay: false,
+
+  navigation: {
+    nextEl: ".swiper-chambre-button-next",
+    prevEl: ".swiper-chambre-button-prev",
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
 
 const swiperAcco = new Swiper(".swiper-acco", {
   slidesPerView: 1,

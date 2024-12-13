@@ -10,10 +10,6 @@ $liensCol2 = get_field('liens-gîtes_copier','options');
 $cttCol2 = get_field('contenu_colonne_2','options');
 
 $cttCol3 = get_field('contenu_colonne_3','options');
-$logo = get_field('logo_footer','options');
-
-$cookies = get_field('cookies','options');
-$confidentitalités = get_field('confidentialites','options');
 
 
 if(!is_front_page()):
@@ -23,7 +19,9 @@ endif;?>
 <footer>
     <div class="container">
         <div class="footer-top">
-            <div class="col general-infos">                
+            <div class="col general-infos">
+                <?php $logo = get_field('logo_footer','options');?>
+                
                 <?php if($logo):?>
                     <div class="logo-footer">
                         <img src="<?php echo $logo['url'];?>" alt="<?php echo $logo['title'];?>" />
@@ -63,21 +61,21 @@ endif;?>
     </div>
     <div class="footer_bottom">
         <div class="container desktop">
-            <?php if($cookies): echo '<a href="'.$cookies['url'].'">'.$cookies['title'].'</a>'; endif;?>
+            <a href="">Cookies</a>
             <div>
                 <?php 
                     $copyright = get_field('copyright','options');
                     if($copyright): echo $copyright; endif;
                 ?>
             </div>
-            <?php if($confidentitalités): echo '<a href="'.$confidentitalités['url'].'">'.$confidentitalités['title'].'</a>'; endif;?>
+            <a href="">Confidentialité</a>
         </div>
 
         <div class="container mobile">
             <div class="links">
-                <?php if($cookies): echo '<a href="'.$cookies['url'].'">'.$cookies['title'].'</a>'; endif;?>
-                <?php if($confidentitalités): echo '<a href="'.$confidentitalités['url'].'">'.$confidentitalités['title'].'</a>'; endif;?>
-                </div>
+                <a href="https://lastrijk.caractere-advertising.be/politique-de-cookies-ue/">Cookies</a>
+                <a href="https://lastrijk.caractere-advertising.be/confidentialites/">Confidentialité</a>
+            </div>
 
             <div class="copyright">
             <?php 
