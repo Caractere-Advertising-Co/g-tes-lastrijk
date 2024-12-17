@@ -37,55 +37,11 @@ get_header();?>
         <div class="swiper-pagination"></div>
     </div>
 
-    <!-- <div class="booking">
-        <form class="research-bar" action="<?php echo get_bloginfo('url').'/booking';?>" method="POST">
-            <div class="research-bar__item">
-                <select class="research-bar__item--input gites" name="gites">
-                    <option value="la-chapelle">La Chapelle</option>
-                    <option value="la-passerelle">La Passerelle</option>
-                </select>
-            </div>
-            <div class="research-bar__item">
-                <input class="research-bar__item--input date" type="text" name="check-in" id="check-in" placeholder="Date d'arrivée" />
-            </div>
-            <div class="research-bar__item">
-                <input class="research-bar__item--input date" type="text" name="check-out" id="check-out" placeholder="Date de départ" />
-            </div>
-            <div class="research-bar__item">
-                <input class="research-bar__item--input people" type="text" name="people" id="people" placeholder="Personnes" />
-            </div>  
-            <div class="research-bar__item button">
-                <input type="submit" id="rechercher" value="Rechercher" />
-            </div>
-        </form>
-
-        
-        <div>
-        <?php if($_POST):
-                $checkin = $_POST['check-in'];
-                $checkout = $_POST['check-out'];
-                $persons = $_POST['people'];
-
-                $checkin = date("Y-m-d", strtotime($checkin));
-                $checkout = date("Y-m-d", strtotime($checkout));
-            endif;?>
-        </div>
-    </div> -->
-
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script>
-    jQuery(document).ready(function($){
-        $("#check-in, #check-out").datepicker({ dateFormat: 'dd/mm/yy' });
-    });
-    </script>
-    
     <span class="rotate-reverse cta-hero">
         <?php get_template_part( 'templates-parts/cta-reservation' );?>
     </span>
 </section>
 
-<?php if(!$_POST): ?>
 <section id="card-gites">
     <div class="container columns">
         <?php 
@@ -108,34 +64,9 @@ get_header();?>
                 <?php endwhile;
             endif;?>
     </div>
-
-    <!--<div class="container nodesktop">
-        <div class="swiper swiper-card">
-            <div class="swiper-wrapper">
-                <?php 
-                    if(have_rows('services')):
-                        while(have_rows('services')): the_row();
-                            $bg = get_sub_field('background_service');
-                            $nom = get_sub_field('nom_service');
-                            $cta = get_sub_field('lien_service');
-                        ?>
-
-                            <div class="swiper-slide card" style="background:url('<?php echo $bg['url'];?>');"> 
-                                <div class="content from-bottom">
-                                    <p>Découvrir</p>
-                                    <h2><?php echo $nom;?></h2>
-                                </div>
-                            </div>
-
-                        <?php endwhile;
-                endif;?>
-            </div>
-        </div>
-    </div>-->
 </section>
 
 <?php get_template_part( 'templates-parts/section-aubel' );?>   
-<!-- get_template_part( 'templates-parts/section-citation' );-->
 <?php get_template_part( 'templates-parts/section-two-columns-tit' );?>
 <?php get_template_part( 'templates-parts/section-extra' );?>
 
@@ -213,8 +144,6 @@ get_header();?>
 </section>
 
 <?php get_template_part( 'templates-parts/section-bannerfullwidth' );?>
-<?php get_template_part( 'templates-parts/contact' );?>
+<?php get_template_part( 'templates-parts/contact' );
 
-<?php endif;?>
-
-<?php get_footer();?>
+get_footer();?>

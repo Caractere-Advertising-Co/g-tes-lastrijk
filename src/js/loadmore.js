@@ -1,4 +1,3 @@
-
   $(document).ready(function () {
     var offset = 9; // Nombre d'articles déjà affichés
 
