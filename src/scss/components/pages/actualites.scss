@@ -161,6 +161,10 @@
       .cta-border{
         width: fit-content;
       }
+
+      .cta-border + .cta-border{
+        margin: auto;
+      }
     }
   }
 
