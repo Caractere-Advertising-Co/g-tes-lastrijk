@@ -159,11 +159,14 @@
       margin: 30px auto;
 
       .cta-border{
-        width: fit-content;
+        min-width: 360px;
+        margin: auto;
+        margin-right: 0;
       }
 
       .cta-border + .cta-border{
         margin: auto;
+        margin-left: 0;
       }
     }
   }
