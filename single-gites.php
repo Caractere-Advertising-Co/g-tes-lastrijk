@@ -143,7 +143,8 @@ endif;?>
     </section>
 <?php endif;?>
 
-<?php get_template_part( 'templates-parts/section-extra' );?>
+<?php if(is_page(535)):?><?php get_template_part( 'templates-parts/section-extra' );?><?php endif;?>
+    
 <?php get_template_part( 'templates-parts/section-citation' );?>
 <?php get_template_part( 'templates-parts/section-acco-infos' );?>
 <?php get_template_part( 'templates-parts/disclaimer-banner' );?>
