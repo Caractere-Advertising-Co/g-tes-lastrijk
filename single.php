@@ -16,7 +16,7 @@ if(!$bg_header):
 else :
     $bg_header = get_field('bg_header');
     $bg_url = $bg_header['url'];
-endif;
+endif;  
 
 $transActif = get_field('actif_section_trans');
 $imgTr = get_field('image-transition');
