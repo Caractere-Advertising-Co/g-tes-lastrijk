@@ -150,6 +150,12 @@
         color: $primary-color;
       }
     }
+
+    .cta-list{
+      display: flex;
+      align-items: center;
+      margin: 30px auto;
+    }
   }
 
   #banner-fullwidth {

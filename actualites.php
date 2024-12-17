@@ -19,6 +19,7 @@ endif;
 
 $titreDec = get_field('decouverte');
 $cta = get_field('cta');
+$cta2 = get_field('cta-2');
 
 ?>
 
@@ -55,7 +56,10 @@ $cta = get_field('cta');
 
         <div id="nos-campagnes">
             <?php if($titreDec): echo $titreDec; endif;?>
-            <?php if($cta): echo '<a href="'.$cta['url'].'" class="cta-border">'.$cta['title'].'</a>';endif;?>
+            <div class="list-cta">
+                <?php if($cta): echo '<a href="'.$cta['url'].'" class="cta-border" target="_blank">'.$cta['title'].'</a>';endif;?>
+                <?php if($cta2): echo '<a href="'.$cta2['url'].'" class="cta-border" target="_blank">'.$cta2['title'].'</a>';endif;?>
+            </div>
         </div>
     </div>
 </section>
