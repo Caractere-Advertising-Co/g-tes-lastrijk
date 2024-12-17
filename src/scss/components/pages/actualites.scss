@@ -154,7 +154,13 @@
     .list-cta{
       display: flex;
       align-items: center;
+      justify-content: space-around;
+      gap: 50px;
       margin: 30px auto;
+
+      .cta-border{
+        width: fit-content;
+      }
     }
   }
 
