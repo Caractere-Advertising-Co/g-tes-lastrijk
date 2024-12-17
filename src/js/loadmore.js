@@ -1,5 +1,4 @@
--(
-  // scripts.js (ou tout autre nom que vous avez donné à votre fichier JavaScript)
+
   $(document).ready(function () {
     var offset = 9; // Nombre d'articles déjà affichés
 
@@ -37,22 +36,4 @@
         },
       });
     });
-  })
-);
-
-$(document).ready(function () {
-  $(".galerie-grid a").slice(0, 9).show();
-
-  var items = $(".galerie-grid a").length;
-  var shown = 9;
-
-  $(".more").click(function () {
-    shown = $(".galerie-grid a:visible").length + 9;
-    if (shown < items) {
-      $(".galerie-grid a").slice(0, parseInt(shown)).show(300);
-    } else {
-      $(".galerie-grid a").slice(0, parseInt(shown)).show(300);
-      $(".more").hide();
-    }
   });
-});
