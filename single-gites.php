@@ -129,8 +129,10 @@ endif;?>
                     
                 </div>
 
-                <div class="swiper-chambre-button-prev"></div>
-                <div class="swiper-chambre-button-next"></div>
+                <?php if(count($galerie) > 1):?>
+                    <div class="swiper-chambre-button-prev"></div>
+                    <div class="swiper-chambre-button-next"></div>
+                <?php endif;?>
             <?php endif;?>
     </div>
 </section>

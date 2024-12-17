@@ -40,10 +40,6 @@ endif;
             <?php endforeach;
         endif;?>
     </div>
-
-    <div class="container">
-        <a href="#!" class="cta-border more">Plus de photos</a>
-    </div>
 </div>
 
 <?php get_footer();
