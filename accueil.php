@@ -28,15 +28,6 @@ get_header();?>
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="booking">
-        <p>Nos Gites</p>
-        <p>Check-in</p>
-        <p>Check-out</p>
-        <p>Personne(s)</p>
-        <p class="gold">Check-now</p>
-        
-    </div>
-
     <span class="rotate-reverse cta-hero">
         <?php get_template_part( 'templates-parts/cta-reservation' );?>
     </span>

@@ -53,29 +53,6 @@ endif;?>
             <?php if($lien): echo '<a href="'.$lien['url'].'" class="cta">'.$lien['title'].'</a>';endif;?>
         </div>
     </div>
-
-    <!--<div class="booking">
-        <form class="research-bar" action="<?php echo get_bloginfo('url').'/booking';?>" method="POST">
-            <div class="research-bar__item">
-                <select class="research-bar__item--input gites" name="gites">
-                    <option value="la-chapelle">La Chapelle</option>
-                    <option value="la-passerelle">La Passerelle</option>
-                </select>
-            </div>
-            <div class="research-bar__item">
-                <input class="research-bar__item--input date" type="text" name="check-in" id="check-in" placeholder="Date d'arrivée" />
-            </div>
-            <div class="research-bar__item">
-                <input class="research-bar__item--input date" type="text" name="check-out" id="check-out" placeholder="Date de départ" />
-            </div>
-            <div class="research-bar__item">
-                <input class="research-bar__item--input people" type="text" name="people" id="people" placeholder="Personnes" />
-            </div>  
-            <div class="research-bar__item button">
-                <input type="submit" id="rechercher" value="Rechercher" />
-            </div>
-        </form>
-    </div>-->
 </header>
 
 <section id="simple-page">

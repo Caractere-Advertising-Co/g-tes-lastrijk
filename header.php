@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="<?php echo get_template_directory_uri();?>/dist/main.bundle.js" defer></script>
-    <script src="<?php echo get_template_directory_uri();?>/dist/style.bundle.js" defer></script>
+    <script src="<?php echo get_template_directory_uri();?>/dist/style.bundle.js" ></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcCZ4mj6l487UULbiFxsPHEUzkQUIuy-A&callback=console.debug&libraries=maps,marker&v=beta">
     </script>
 
