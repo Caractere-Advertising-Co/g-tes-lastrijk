@@ -10,7 +10,7 @@
 }
 
 .grecaptcha-badge{
-  right: -240px!important;
+  visibility: hidden;
 
   &:hover{
     right: 0!important;
