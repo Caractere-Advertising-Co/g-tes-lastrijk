@@ -18,6 +18,7 @@ else :
     $bg_url = $bg_header['url'];
 endif;
 
+$transActif = get_field('actif_section_trans');
 $imgTr = get_field('image-transition');
 $contentTr = get_field('content-transition');
 $ctaTr = get_field('cta-transition');
@@ -37,6 +38,8 @@ $ctaTr = get_field('cta-transition');
 
 <?php get_template_part( 'templates-parts/section-two-columns-tit' );?>
 
+
+<?php if($transActif):?>
 <section id="transition-blog">
 <div class="imgTr"><img src="<?php if($imgTr): echo $imgTr['url'];endif;?>" alt="<?php if($imgTr):echo $imgTr['title'];endif;?>"/></div>
     <div class="container columns">
@@ -47,8 +50,6 @@ $ctaTr = get_field('cta-transition');
         </div>
     </div>
 </section>
-
-<?php get_template_part( 'templates-parts/section-introduction' );?>
-
+<?php endif;?>
 
 <?php get_footer();
