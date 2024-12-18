@@ -1,7 +1,5 @@
 <?php
-/*
-Template Name: Tarifs
-*/
+/* Template Name: Tarifs */
 
 get_header();
 

@@ -42,7 +42,7 @@ endif;?>
     </div>
 </div>
 
-<header id="header" >
+<header id="header">
     <img src="<?php echo $bg_url;?>" alt="<?php echo $bg_header['title'];?>"/>
     <div class="container">
         <?php if($surtitre): echo '<span class="subtitle">'.$surtitre.'</span>'; endif;?>

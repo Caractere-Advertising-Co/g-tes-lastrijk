@@ -1,16 +1,19 @@
 <?php 
 
-$cttCol1 = get_field('contenu_colonne_1','options');
+$cttCol1        = get_field('contenu_colonne_1','options');
 
-$titreCol2 = get_field('titre-colonne-2','options');
-$gites = get_field('liens-gîtes','options');
-$titreCol22 = get_field('titre-colonne-2-2','options');
-$liensCol2 = get_field('liens-gîtes_copier','options');
+$titreCol2      = get_field('titre-colonne-2','options');
+$gites          = get_field('liens-gîtes','options');
 
-$cttCol2 = get_field('contenu_colonne_2','options');
+$titreCol22     = get_field('titre-colonne-2-2','options');
+$liensCol2      = get_field('liens-gîtes_copier','options');
 
-$cttCol3 = get_field('contenu_colonne_3','options');
+$cttCol2        = get_field('contenu_colonne_2','options');
 
+$cttCol3        = get_field('contenu_colonne_3','options');
+
+$logo           = get_field('logo_footer','options');
+$copyright      = get_field('copyright','options');
 
 if(!is_front_page()):
     get_template_part( 'templates-parts/section-bannerfullwidth' );
@@ -19,9 +22,7 @@ endif;?>
 <footer>
     <div class="container">
         <div class="footer-top">
-            <div class="col general-infos">
-                <?php $logo = get_field('logo_footer','options');?>
-                
+            <div class="col general-infos">                
                 <?php if($logo):?>
                     <div class="logo-footer">
                         <img src="<?php echo $logo['url'];?>" alt="<?php echo $logo['title'];?>" />
@@ -29,7 +30,6 @@ endif;?>
                 <?php endif;?>
                 
                 <?php if($cttCol1): echo $cttCol1; endif;?>
-
             </div>
 
             <div class="col col-2">
@@ -54,21 +54,14 @@ endif;?>
                     endif;?>
             </div>
 
-            <div class="col rs_footer">
-                <?php if($cttCol3): echo $cttCol3;endif;?>
-            </div>
+            <div class="col rs_footer"><?php if($cttCol3): echo $cttCol3;endif;?></div>
         </div>
     </div>
     <div class="footer_bottom">
         <div class="container desktop">
-            <a href="">Cookies</a>
-            <div>
-                <?php 
-                    $copyright = get_field('copyright','options');
-                    if($copyright): echo $copyright; endif;
-                ?>
-            </div>
-            <a href="">Confidentialité</a>
+            <a href="https://lastrijk.caractere-advertising.be/politique-de-cookies-ue/">Cookies</a>
+            <div><?php if($copyright): echo $copyright; endif;?></div>
+            <a href="https://lastrijk.caractere-advertising.be/confidentialites/">Confidentialité</a>
         </div>
 
         <div class="container mobile">
@@ -77,12 +70,7 @@ endif;?>
                 <a href="https://lastrijk.caractere-advertising.be/confidentialites/">Confidentialité</a>
             </div>
 
-            <div class="copyright">
-            <?php 
-                    $copyright = get_field('copyright','options');
-                    if($copyright): echo $copyright; endif;
-                ?>
-            </div>
+            <div class="copyright"><?php if($copyright): echo $copyright; endif;?></div>
         </div>
     </div>
 </footer>

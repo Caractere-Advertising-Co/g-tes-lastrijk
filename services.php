@@ -1,7 +1,5 @@
 <?php
-/*
-Template Name: Services
-*/
+/* Template Name: Services */
 
 get_header();
 

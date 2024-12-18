@@ -1,7 +1,6 @@
 <?php
-/*
-Template Name: Actualités
-*/
+
+/* Template Name: Actualités */
 
 get_header();
 

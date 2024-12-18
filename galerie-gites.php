@@ -18,7 +18,7 @@ endif;
 
 ?>
 
-<header id="header-simple-page" >
+<section id="header-simple-page" >
     <img src="<?php echo $bg_url;?>" alt="<?php echo $bg_header['title'];?>"/>
 
     <div class="container">
@@ -27,7 +27,7 @@ endif;
             <?php if($titre): echo $titre; endif;?>
         </div>
     </div>
-</header>
+</section>
 
 <div id="galerie-gites">
     <div class="galerie-grid">

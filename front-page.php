@@ -143,7 +143,9 @@ get_header();?>
     </div>
 </section>
 
-<?php get_template_part( 'templates-parts/section-bannerfullwidth' );?>
-<?php get_template_part( 'templates-parts/contact' );
+<?php 
+
+get_template_part( 'templates-parts/section-bannerfullwidth' );
+get_template_part( 'templates-parts/contact' );
 
 get_footer();?>

@@ -22,7 +22,7 @@ $contentUniq = get_field('content-unique');
 $imgUd = get_field('image-droite-unique');
 ?>
 
-<header id="header-simple-page" >
+<section id="header-simple-page" >
     <img src="<?php echo $bg_url;?>" alt="<?php echo $bg_header['title'];?>"/>
 
     <div class="container">
@@ -31,7 +31,7 @@ $imgUd = get_field('image-droite-unique');
             <?php if($titre): echo $titre; endif;?>
         </div>
     </div>
-</header>
+</section>
 
 <?php get_template_part( 'templates-parts/contact' );?>
 

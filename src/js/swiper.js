@@ -27,14 +27,6 @@ const swiperFrontPage = new Swiper(".swiper-resp", {
   },
 });
 
-// const swiperCard = new Swiper(".swiper-card", {
-//   cssMode: true,
-//   slidesPerView: 2,
-//   loop: true,
-//   spaceBetween: 20,
-//   autoplay: false,
-// });
-
 /* Commun */
 
 const swiperExtra = new Swiper(".swiper-extra", {

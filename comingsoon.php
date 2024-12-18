@@ -1,7 +1,6 @@
 <?php 
  /* Template Name: Coming soon */
 
- /* gites \ gite_description \ galerie_gites \ banner_arriere_plan */ 
 
  $title = get_field('option','titre');
  $logo = get_field('option','logo');
