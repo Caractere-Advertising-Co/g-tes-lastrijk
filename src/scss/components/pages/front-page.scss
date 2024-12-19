@@ -1,5 +1,6 @@
 #hero-container {
   height: 90vh;
+  min-height: 800px;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -11,6 +12,7 @@
 
       .swiper-slide {
         height: 90vh;
+        min-height: 800px;
 
         img {
           position: absolute;
