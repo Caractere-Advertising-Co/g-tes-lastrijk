@@ -1008,8 +1008,11 @@
     padding: 50px 0 0;
 
     .list-cta{
+      flex-direction: column;
+      gap: 30px;
+
       .cta-border{
-        min-width: 300px;
+        min-width: 250px;
         margin: auto;
       }
     }
