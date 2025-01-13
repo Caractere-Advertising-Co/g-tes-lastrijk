@@ -39,6 +39,10 @@
     line-height: 2.5rem;
   }
 
+  p{
+    text-align: left;
+  }
+
   // COMMUN
 
   #ui-datepicker-div{
@@ -378,9 +382,11 @@
         }
 
         .tiny-image-left {
-          width: 300px;
-          height: 200px;
-          bottom: -50px;
+          width: 240px;
+          height: 170px;
+          bottom: -90px;
+          border: 20px solid $light;
+          border-right: 0;
         }
       }
 
@@ -595,9 +601,21 @@
       }
     }
 
+    #disclaimer_banner {
+      .container {
+        flex-direction: column; 
+
+          .cta-border {
+            position: relative;
+            margin-right: 0;
+            margin-left: auto;
+          }
+      }
+    }
+
     #citation {
       .container {
-        margin: 0 auto;
+        margin: 50px auto;
       }
     }
 
@@ -616,14 +634,14 @@
                 height: 350px;
               }
             }
+          }
 
-            .swiper-acco-button-next{
-              right: -50px;
-            }
+          .swiper-acco-button-next{
+            right: -50px;
+          }
 
-            .swiper-acco-button-prev{
-              right: 0;
-            }
+          .swiper-acco-button-prev{
+            right: 0;
           }
         }
       }

@@ -63,10 +63,12 @@ for (i = 0; i < acc.length; i++) {
 
 var tarifs = document.getElementById('toTarifs');
 
-tarifs.addEventListener("click", function(){
-  var sectionTar = document.getElementById('tarifs');
-  var panel = sectionTar.nextElementSibling;
+if(tarifs){
+  tarifs.addEventListener("click", function(){
+    var sectionTar = document.getElementById('tarifs');
+    var panel = sectionTar.nextElementSibling;
 
-  sectionTar.classList.toggle("active");
-  panel.style.maxHeight = panel.scrollHeight + "px";
-})
+    sectionTar.classList.toggle("active");
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  })
+}
