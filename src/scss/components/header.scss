@@ -142,12 +142,19 @@
 
         li:last-child{
           display: flex;
+          align-items: center;
 
           &::before {
             content: "|";
             color: $primary-color;
             font-weight: 300;
             margin-right: 10px;
+          }
+
+          li{
+            ::before{
+              content: inherit;
+            }
           }
         }
 
@@ -171,7 +178,6 @@
         .wpml-ls-current-language {
           a {
             color: $primary-color;
-            font-weight: 600;
           }
         }
 
