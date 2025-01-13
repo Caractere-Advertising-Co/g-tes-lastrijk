@@ -151,9 +151,11 @@
             margin-right: 10px;
           }
 
-          li{
-            ::before{
-              content: inherit;
+          .submenu{
+            li{
+              &::before{
+                content: inherit;
+              }
             }
           }
         }
