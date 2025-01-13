@@ -257,6 +257,28 @@
     }
   }
 
+  #modal-chambre{
+    .container_popup{
+      width: 98vw;
+
+      .popup-content{
+        .close{
+          right: 1vw;
+        }
+
+        .swiper-reference{
+          .swiper-button-next{
+            right: 0;
+          }
+
+          .swiper-button-prev{
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
   /* Home */
 
   .cta-hero {
@@ -564,6 +586,15 @@
   /* Gites */
 
   .gites-template {
+    #header{
+      .container{
+        .columns{
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+    }
+
     #citation {
       .container {
         margin: 0 auto;
