@@ -987,10 +987,15 @@
   }
 }
 
-.page-template-tarifs{
+.page-template-tarifs,
+.page-template-gites{
   .table_tarifs{
     overflow: scroll;
     width: 100%;
+
+    table{
+      width: inherit;
+    }
   }
 }
 
