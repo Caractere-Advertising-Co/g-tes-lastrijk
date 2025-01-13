@@ -143,6 +143,7 @@
         li:last-child{
           display: flex;
           align-items: center;
+          gap: 15px;
 
           &::before {
             content: "|";
