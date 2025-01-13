@@ -945,6 +945,20 @@
   }
 }
 
+/* Page actualites */
+.page-template-actualites{
+  #nos-campagnes{
+    padding: 50px 0 0;
+
+    .list-cta{
+      .cta-border{
+        min-width: 300px;
+        margin: auto;
+      }
+    }
+  }
+}
+
 /* Page Contact */
 .page-template-contact {
   #widget-contact{
