@@ -13,7 +13,7 @@
     .bloc_img,
     .content_section-cta {
       width: 52.5%;
-      min-height: 500px;
+      // min-height: 500px;
       max-height: 700px;
       position: relative;
       background: $primary-color;
@@ -43,7 +43,6 @@
 
       h2 {
         font-size: 2rem;
-        font-family: "Montserrat", sans-serif;
         color: $light;
         font-weight: 300;
         line-height: 2.3rem;
