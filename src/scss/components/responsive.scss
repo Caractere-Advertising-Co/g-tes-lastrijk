@@ -943,6 +943,14 @@
       .form_grid{
         grid-template-columns: repeat(1,1fr);
       }
+
+      ul{
+        li{
+          input[type=submit]{
+            border: 1px solid;
+          }
+        }
+      }
     }
   }
 
