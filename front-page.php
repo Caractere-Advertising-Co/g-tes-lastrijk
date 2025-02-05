@@ -23,7 +23,7 @@ get_header();?>
                                     <?php if($links):?>
                                         <div class="columns">
                                             <?php foreach($links as $lks):?>
-                                                <a href="<?php echo $lks['cta']['url'];?>" target="_blank" class="cta"><?php echo $lks['cta']['title'];?></a>
+                                                <a href="<?php echo $lks['cta']['url'];?>" class="cta"><?php echo $lks['cta']['title'];?></a>
                                             <?php endforeach;?>
                                         </div>
                                     <?php endif;?>
