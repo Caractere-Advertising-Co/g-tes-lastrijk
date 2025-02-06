@@ -618,9 +618,19 @@
 
           .cta-border {
             position: relative;
-            margin-right: 0;
-            margin-left: auto;
+            margin-right: auto;
+            margin-left: 0;
           }
+      }
+    }
+
+    #content-tarifs{
+      table{
+        thead{
+          th {
+            padding: 5px 35px;
+          }
+        }
       }
     }
 
