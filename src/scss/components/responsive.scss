@@ -105,15 +105,16 @@
     display: block;
 
     .primary-navigation {
-      position: absolute;
-      bottom: 10vh;
-      left: 10vw;
+      position: relative;
+      bottom: 30vh;
+      margin: auto;
 
       ul {
         list-style: none;
 
         li {
           margin-bottom: 0;
+          text-align: left;
 
           a {
             font-weight: 300;
@@ -122,7 +123,7 @@
           }
 
           .sub-menu {
-            padding-left: 40px;
+            padding-left: 0;
             margin-top: 10px;
 
             li {
@@ -131,6 +132,7 @@
 
               a {
                 font-size: 1.3rem;
+                line-height: 1.5rem;
               }
             }
           }
