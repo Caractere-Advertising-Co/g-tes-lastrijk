@@ -107,7 +107,7 @@
     .primary-navigation {
       position: absolute;
       bottom: 15vh;
-      left: 5vw;
+      left: 7.5vw;
 
       ul {
         list-style: none;
@@ -117,9 +117,9 @@
           text-align: left;
 
           a {
-            font-weight: 400;
-            font-size: 2rem;
-            line-height: 2.2rem;
+            font-weight: 300;
+            font-size: 1.8rem;
+            line-height: 2rem;
           }
 
           .sub-menu {
@@ -131,8 +131,8 @@
               margin-bottom: 10px;
 
               a {
-                font-size: 1.3rem;
-                line-height: 1.5rem;
+                font-size: 1.2rem;
+                line-height: 1.3rem;
               }
             }
           }
@@ -154,11 +154,11 @@
         }
 
         .wpml-ls-item{
-          width: 35px;
+          width: 30px;
+        }
 
-          &:first-child{
-            margin-top: 20px;
-          }
+        #menu-item-wpml-ls-31-fr{
+          margin-top: 40px;
         }
       }
     }
