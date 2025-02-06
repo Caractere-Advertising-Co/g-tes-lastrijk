@@ -50,7 +50,7 @@
 
     <div class="secondary-navigation">
         <?php wp_nav_menu(array(
-            'theme_location' => 'secondary',
+            'theme_location' => 'megamenu',
             'menu_class' => 'semi-bold nav'
         ));?>
     </div>
