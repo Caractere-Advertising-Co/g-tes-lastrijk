@@ -969,6 +969,14 @@
     padding-top: 100px;
   }
 
+  .page-template-galerie-gites{
+    #galerie-gites{
+      .galerie-grid{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+  }
+
   #mot_president {
     .container {
       .columns {
