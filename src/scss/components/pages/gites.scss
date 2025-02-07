@@ -177,6 +177,7 @@
       padding: 0 18px;
       max-height: 0;
       overflow: hidden;
+      position: relative;
       transition: max-height 0.4s ease-out;
 
       h3 {
@@ -193,6 +194,17 @@
         li {
           margin-bottom: 0;
         }
+      }
+
+      &::after{
+        content: '';
+        background: linear-gradient(360deg, #ffffff, transparent);
+        height: 30px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
       }
     }
 
